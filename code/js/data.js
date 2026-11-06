@@ -1,0 +1,26 @@
+/* Dữ liệu mẫu sản phẩm - có thể thay bằng JSON/API ở các tuần sau */
+const COLORS = {
+  den: { n: 'Đen', c: '#14171C' }, trang: { n: 'Trắng', c: '#F3F4F6' }, xam: { n: 'Xám', c: '#8A929B' },
+  xanh: { n: 'Xanh navy', c: '#22344D' }, do: { n: 'Đỏ', c: '#C8312B' }, olive: { n: 'Olive', c: '#5E6B45' },
+  hong: { n: 'Hồng tro', c: '#C99A9A' },
+};
+const CLOTH_SIZES = ['S', 'M', 'L', 'XL'];
+const PRODUCTS = [
+  { id: 1, name: 'Áo tank Aero', group: 'nam', cat: 'Áo nam', price: 289000, icon: 'tank', bg: '#D6DCE4', colors: ['den', 'trang', 'xam'], sizes: CLOTH_SIZES, badge: 'Mới', mat: 'Vải lưới thoáng, thấm hút nhanh', desc: 'Áo ba lỗ cắt khoét sâu cho tay thoải mái khi đẩy và kéo. Vải mỏng nhẹ, khô nhanh sau buổi tập.' },
+  { id: 2, name: 'Áo thun Oversized Iron', group: 'nam', cat: 'Áo nam', price: 349000, old: 399000, icon: 'tee', bg: '#E3D9D2', colors: ['den', 'xam', 'olive'], sizes: CLOTH_SIZES, badge: 'Giảm giá', mat: 'Cotton compact 260gsm', desc: 'Form rộng vai thả, cotton dày dặn giữ dáng. Hợp mặc tập lẫn mặc ra ngoài.' },
+  { id: 3, name: 'Quần short Rep 7"', group: 'nam', cat: 'Quần nam', price: 329000, icon: 'shorts', bg: '#D4DDD7', colors: ['den', 'xanh', 'olive'], sizes: CLOTH_SIZES, badge: '', mat: 'Vải dệt co giãn 4 chiều', desc: 'Độ dài 7 inch, cạp bản to không cuộn khi squat. Có túi khóa kéo đựng chìa khóa.' },
+  { id: 4, name: 'Hoodie Heavyweight', group: 'nam', cat: 'Áo nam', price: 599000, icon: 'hoodie', bg: '#CBD0D8', colors: ['den', 'xam', 'xanh'], sizes: CLOTH_SIZES, badge: 'Bán chạy', mat: 'Nỉ bông 380gsm', desc: 'Nỉ dày, mũ hai lớp, bo gấu chắc chắn. Giữ ấm khi khởi động và sau buổi tập.' },
+  { id: 5, name: 'Áo bra Pulse', group: 'nu', cat: 'Áo nữ', price: 259000, icon: 'bra', bg: '#E8D7D7', colors: ['den', 'hong', 'olive'], sizes: ['S', 'M', 'L'], badge: 'Mới', mat: 'Vải nylon spandex', desc: 'Nâng đỡ vừa phải cho các bài tập sức mạnh, dây áo bản vừa, miếng mút tháo rời.' },
+  { id: 6, name: 'Legging Seamless Form', group: 'nu', cat: 'Quần nữ', price: 429000, old: 499000, icon: 'legging', bg: '#D9D6E3', colors: ['den', 'xanh', 'hong'], sizes: ['S', 'M', 'L'], badge: 'Giảm giá', mat: 'Dệt liền không đường may', desc: 'Dệt liền ôm dáng, không lộ khi squat sâu. Cạp cao giữ eo ổn định.' },
+  { id: 7, name: 'Quần short Stride', group: 'nu', cat: 'Quần nữ', price: 279000, icon: 'shorts', bg: '#E2DDD0', colors: ['den', 'xam', 'hong'], sizes: ['S', 'M', 'L'], badge: '', mat: 'Vải co giãn nhẹ', desc: 'Short ôm có lót trong, phù hợp tập chân và cardio.' },
+  { id: 8, name: 'Áo crop Sculpt', group: 'nu', cat: 'Áo nữ', price: 269000, icon: 'crop', bg: '#DDD3D9', colors: ['den', 'trang', 'olive'], sizes: ['S', 'M', 'L'], badge: '', mat: 'Cotton pha spandex', desc: 'Áo crop dáng suông, lộ vừa phải vùng eo, mặc thoải mái khi tập thân trên.' },
+  { id: 9, name: 'Lifting strap Grip', group: 'phukien', cat: 'Lifting strap', price: 159000, icon: 'strap', bg: '#CFD4DA', colors: ['den', 'do'], sizes: ['Free size'], badge: 'Bán chạy', mat: 'Cotton bản 4cm, có đệm cổ tay', spec: 'Dài 60cm, bản rộng 4cm', desc: 'Dây kéo hỗ trợ lực nắm khi kéo xà, deadlift, row. Có lớp đệm neoprene ở cổ tay.', use: ['Luồn đầu dây qua vòng, đeo vào cổ tay.', 'Quấn phần dây còn lại quanh thanh tạ theo chiều kéo.', 'Siết chặt, nắm tay và bắt đầu kéo.'] },
+  { id: 10, name: 'Quấn cổ tay Wrist Wrap', group: 'phukien', cat: 'Quấn cổ tay', price: 199000, icon: 'wrap', bg: '#D9D3C9', colors: ['den', 'xanh', 'do'], sizes: ['45cm', '60cm'], badge: 'Mới', mat: 'Vải co giãn, khóa dán', spec: 'Dài 45cm hoặc 60cm, rộng 8cm', desc: 'Giữ cổ tay thẳng khi đẩy tạ nặng như bench press, overhead press.', use: ['Luồn ngón cái qua vòng cố định.', 'Quấn quanh cổ tay, kéo căng vừa đủ.', 'Dán chặt khóa, kiểm tra cổ tay còn cử động được ngón tay.'] },
+  { id: 11, name: 'Đai lưng Power Belt', group: 'phukien', cat: 'Đai lưng', price: 890000, icon: 'belt', bg: '#D2D5D0', colors: ['den', 'do'], sizes: CLOTH_SIZES, badge: '', mat: 'Da PU dày 10mm, khóa cài', spec: 'Dày 10mm, bản rộng 10cm', desc: 'Đai lưng hỗ trợ ổn định vùng bụng và lưng dưới khi squat, deadlift nặng.', use: ['Đo vòng eo ngang rốn để chọn size.', 'Thắt đai ngang rốn, siết chặt sau khi hít sâu.', 'Chỉ đeo ở các set nặng, tháo ra ở set nhẹ và khởi động.'] },
+  { id: 12, name: 'Quấn gối Knee Sleeve', group: 'phukien', cat: 'Quấn gối', price: 549000, icon: 'sleeve', bg: '#DAD6DD', colors: ['den', 'xanh'], sizes: CLOTH_SIZES, badge: '', mat: 'Neoprene 7mm', spec: 'Dày 7mm, bán theo cặp', desc: 'Giữ ấm khớp gối, tạo cảm giác chắc chân khi squat và leg press.', use: ['Cuộn ống quấn lên đến trên đầu gối.', 'Kéo lên vị trí bao phủ đầu gối, chỉnh phẳng nếp gấp.', 'Tháo ra sau buổi tập để vải khô thoáng.'] },
+];
+const NEWS = [
+  { id: 1, title: 'Khi nào nên dùng lifting strap?', date: '28/10/2026', icon: 'strap', bg: '#CFD4DA', sum: 'Strap giúp bạn kéo nặng hơn khi lực nắm là điểm yếu. Cùng xem lúc nào nên dùng và lúc nào nên bỏ.' },
+  { id: 2, title: 'Chọn size áo tập: đo đúng trong 3 bước', date: '20/10/2026', icon: 'tee', bg: '#E3D9D2', sum: 'Đo ngực, vai và chiều dài thân để chọn size vừa vặn, tránh phải đổi trả.' },
+  { id: 3, title: 'Đai lưng và quấn cổ tay: dùng sao cho đúng?', date: '12/10/2026', icon: 'belt', bg: '#D2D5D0', sum: 'Phụ kiện hỗ trợ chỉ phát huy khi dùng đúng lúc. Hướng dẫn nhanh cho người mới tập.' },
+];

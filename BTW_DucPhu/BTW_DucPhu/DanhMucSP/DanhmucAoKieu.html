@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Mục Áo Kiểu</title>
+    <link  rel="stylesheet" type="text/css" href="DanhMuc.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anuphan:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap"
+      rel="stylesheet"
+    /> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            MIỄN PHÍ ĐỔI HÀNG 30 NGÀY
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="inner-wrap">
+                    <div class="logo">
+                        <a href="http://127.0.0.1:5500/TrangChu/TrangChu.html">
+                            <img src="https://theme.hstatic.net/1000197303/1001046599/14/logo.png?v=8939" alt="MARC Logo">
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">NEW IN</a></li>
+                            <li><a href="#">SẢN PHẨM</a>
+                                <div class="chitiet">
+                                    <ul> 
+                                        <li><a href="">MARC Signature</a></li>
+                                        <li><a href="">Áo blazer</a></li>
+                                        <li><a href="">Quần ống suông</a></li>
+                                        <li><a href="">Áo sơ mi công sở</a></li>
+                                        <li><a href="">Áo kiểu</a></li>
+                                        <li><a href="">Đầm</a></li>
+                                        <li><a href="">Váy</a></li>
+                                        <li><a href="">Quần bơi</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">LOOKBOOK</a></li>
+                            <li>
+                                <a href="#">DỊP/SỰ KIỆN</a>
+                                <div class="chitiet">
+                                    <ul> Thời trang theo Dịp/ Sự kiện
+                                        <li><a href="">Văn phòng công sở</a></li>
+                                        <li><a href="">Hàng ngày tiện dụng</a></li>
+                                        <li><a href="">Cuối tuần dạo phố</a></li>
+                                        <li><a href="">Kỳ nghỉ theo mùa</a></li>
+                                        <li><a href="">Tiệc tùng/Sự kiện lớn</a></li>
+                                        <li><a href="">Work from home</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">BLOG</a>
+                                <div class="chitiet">
+                                    <ul> 
+                                        <li><a href="">Tin Tức Nhà MARC</a></li>
+                                        <li><a href="">Góc Tư Vấn Mặc Đẹp</a></li>
+                                        <li><a href="">Phối Quàn Ống Rộng Hack Chiều Cao</a></li>
+                                        <li><a href="">Chuẩn Form Với Quần Ống Suông</a></li>
+                                        <li><a href="">Phối Đồ Sang Trọng Với Áo Blazer</a></li>
+                                        <li><a href="">Đồ Công Sở Nhẹ Nhàng, Lịch Sự</a></li>
+                                        <li><a href="">Thêm Xinh Với Váy Chữ A</a></li>
+                                        <li><a href="">Phối Đồ Với Chân Váy</a></li>
+                                        <li><a href="">Phối Áo Cá Tính</a></li>
+                                        <li><a href="">Đồ Dự Tiệc Sang Trọng Thu Hút</a></li>
+                                        <li><a href="">Mix Áo Sơ Mi Nhẹ Nhàng Cá Tính</a></li>
+                                        <li><a href="">Phối Quần Tôn Vóc Dáng</a></li>
+                                        <li><a href="">Mẹo Phối Đồ Tăng Chiều Cao</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">CỬA HÀNG</a></li>
+                        </ul>
+                    </div>
+                    <div class="thucthi">
+                        <ul>
+                            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                            <li><a href="http://127.0.0.1:5500/GioHang/GioHang.html"><i class="fa-solid fa-cart-plus"></i></a></li>
+                            <li><a href="http://127.0.0.1:5500/DangNhap/DangNhap.html"><i class="fa-regular fa-user"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-sistrix"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="danhmucc">
+      
+        <div>
+            <p>Trang Chủ/Áo kiểu</p>
+        </div>
+        <div class="danhmuc">
+            <div class="item">
+                <img src="https://theme.hstatic.net/1000197303/1001046599/14/category1-img.png?v=10009" alt="pic">
+                <li>SIGNATURE</li>
+            </div>
+            <div class="item">
+                <img src="https://theme.hstatic.net/1000197303/1001046599/14/category2-img.png?v=10009" alt="pic">
+                <li>Back In Stock</li>
+            </div>
+            <div class="item">
+                <img src="https://theme.hstatic.net/1000197303/1001046599/14/category3-img.png?v=10009" alt="pci">
+                <li ><a href="#">Áo Kiểu</a></li>
+            </div>
+            <div class="item">
+                <img src="https://theme.hstatic.net/1000197303/1001046599/14/category4-img.png?v=10009" alt="pci">
+                <li>Áo Thun</li>
+            </div>
+            <div class="item">
+                <img src="https://theme.hstatic.net/1000197303/1001046599/14/category5-img.png?v=10009" alt="pci">
+                <li>Đầm</li>
+            </div>
+            <div class="item">
+                <img src="https://theme.hstatic.net/1000197303/1001046599/14/category6-img.png?v=10009" alt="pci">
+                <li>Quần</li>
+            </div>
+            <div class="item">
+                <img src="https://theme.hstatic.net/1000197303/1001046599/14/category7-img.png?v=10009" alt="pci">
+                <li>Váy</li>
+            </div>
+        </div>
+    </section>
+    <section class="danhmucc">
+       
+        <div class="pic2">
+            <p>Áo Kiểu</p>
+            <img src="img/pic6.png" alt="">
+           
+        </div>
+    </section>
+   
+    <section>
+        <div class="sticker">
+            <img src="img.html/sticker1.png" alt="">
+        </div>
+        <div class="sticker2">
+            <img src="img.html/sticker2.png" alt="">
+        </div>
+    </section>
+    <section>
+        <div class="button">
+            <ul>
+                <li>Sắp xếp theo</li>
+                <li>
+                <button id="buttonBanchay" type="submit" onclick="showSanPhamBanChay()"><a>Bán Chạy</a></button>
+                </li>
+                <li>
+                    <button id="buttonMoinhat"  type="submit" onclick="showSanPhamMoiNhat()"><a>Mới Nhất</a></button>
+                </li>
+                <li>
+                    <button type="submit"><a>Giá</a></button>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+    <section>
+        <div class="sanpham" id="sanpham" style="display: block;"> 
+           <div class="sanpham-chitiet" >
+            <div class="sanpham-chitiet-mota">
+                <img src="https://product.hstatic.net/1000197303/product/pro_den_1_f5537242fbd04a609670fe0109c65cd9_grande.jpg">
+                <div class="sanpham-chitiet-mota-them">
+                  <li class="tensp"><a href="#">Áo kiểu vải sheer tay phồng phối gile</a> </li>
+                  <li>416,500<ins>đ</ins></li>
+                </div>
+              </div>
+              <div class="sanpham-chitiet-mota">
+                <img src="https://product.hstatic.net/1000197303/product/pro_den_2_028354b7f95743868dece8deeb821ee7_grande.jpg">
+                <div class="sanpham-chitiet-mota-them">
+                  <li class="tensp"><a href="#">Áo khoác cổ tròn tay dài phối ren</a> </li>
+                  <li>200,000<ins>đ</ins></li>
+                </div>
+              </div>
+              <div class="sanpham-chitiet-mota">
+                <img src="https://product.hstatic.net/1000197303/product/pro_kem_01_2_314048d2e6b64ccabc6f81395a6a3711_grande.jpg">
+                <div class="sanpham-chitiet-mota-them">
+                  <li class="tensp"><a href="http://127.0.0.1:5500/ChiTietSP/ChiTietSP3.html">Áo kiểu họa tiết sát nách cổ tròn rút vai thắt nơ</a> </li>
+                  <li>200,000<ins>đ</ins></li>
+                </div>
+              </div>
+              <div class="sanpham-chitiet-mota">
+                <img src="https://product.hstatic.net/1000197303/product/pro_trang_1_72816ee0dd1a48ebaa04417edf9bbdcc_grande.jpg">
+                <div class="sanpham-chitiet-mota-them">
+                  <li class="tensp"><a href="http://127.0.0.1:5500/ChiTietSP/ChiTietSP4.html">Áo sheer tay dài nhún cổ tim</a> </li>
+                  <li>600,000<ins>đ</ins></li>
+                </div>
+              </div>
+              <div class="sanpham-chitiet-mota">
+                <img src="https://product.hstatic.net/1000197303/product/pro_den_1_ef51f729d652463485f4ed8f0a2b19d7_grande.jpg">
+                <div class="sanpham-chitiet-mota-them">
+                  <li class="tensp"><a href="http://127.0.0.1:5500/ChiTietSP/ChiTietSP5.html">Áo 2 dây caro đính hàng nút phối ren</a> </li>
+                  <li>180,000<ins>đ</ins></li>
+                </div>
+              </div>
+              <div class="sanpham-chitiet-mota">
+                <img src="https://product.hstatic.net/1000197303/product/pro_xam_01_2_9789638ef6bb470a893530bb1bb7ad75_grande.jpg">
+                <div class="sanpham-chitiet-mota-them">
+                  <li class="tensp"><a href="http://127.0.0.1:5500/ChiTietSP/ChiTietSP6.html">Áo blazer form cơ bản tay dài 2 túi</a> </li>
+                  <li>345,000<ins>đ</ins></li>
+                </div>
+              </div>
+              <div class="sanpham-chitiet-mota">
+                <img src="https://product.hstatic.net/1000197303/product/pro_hong_02_1_3624eb171f524689bde1cb080d8a1b1d_grande.jpg">
+                <div class="sanpham-chitiet-mota-them">
+                  <li class="tensp"><a href="http://127.0.0.1:5500/ChiTietSP/ChiTietSP7.html">Áo blazer nhún xắn tay cách điệu</a> </li>
+                  <li>695,000<ins>đ</ins></li>
+                </div>
+              </div>
+              <div class="sanpham-chitiet-mota">
+                <img src="https://product.hstatic.net/1000197303/product/pro_kem_01_3_8344fe78ba7d4573a21e6283339cc874_grande.jpg">
+                <div class="sanpham-chitiet-mota-them">
+                  <li class="tensp"><a href="http://127.0.0.1:5500/ChiTietSP/ChiTietSP8.html">Áo ren 2 dây croptop phối viền đính nơ</a> </li>
+                  <li>595,000<ins>đ</ins></li>
+                </div>
+              </div>
+              <div class="sanpham-chitiet-mota">
+                <img src="https://product.hstatic.net/1000197303/product/pro_xanh_la_01_1_2b57a3e06a6d426e8a0f22bf44ceaa68_grande.jpg">
+                <div class="sanpham-chitiet-mota-them">
+                  <li class="tensp"><a href="#">Áo lụa tay dài cổ tròn thắt nơ phối bèo</a> </li>
+                  <li>175,500<ins>đ</ins></li>
+                </div>
+              </div>
+              <div class="sanpham-chitiet-mota">
+                <img src="https://product.hstatic.net/1000197303/product/pro_den_1_f5537242fbd04a609670fe0109c65cd9_grande.jpg">
+                <div class="sanpham-chitiet-mota-them">
+                  <li class="tensp"><a href="#">Áo kiểu vải sheer tay phồng phối gile</a> </li>
+                  <li>197,000<ins>đ</ins></li>
+                </div>
+              </div>
+              <div class="sanpham-chitiet-mota">
+                <img src="https://product.hstatic.net/1000197303/product/pro_kem_01_3_a9dabff738b64be1bc04772fb3c31337_grande.jpg">
+                <div class="sanpham-chitiet-mota-them">
+                  <li class="tensp"><a href="#">Áo gile form ôm cài nút bọc</a> </li>
+                  <li>355,000<ins>đ</ins></li>
+                </div>
+              </div>
+              <div class="sanpham-chitiet-mota">
+                <img src="https://product.hstatic.net/1000197303/product/pro_da_01_2_bace42181a764a488cb3bb118b23c337_grande.jpg">
+                <div class="sanpham-chitiet-mota-them">
+                  <li class="tensp"><a href="#">Áo khoác ngắn cổ vest đệm vai cài nút</a> </li>
+                  <li>175,500<ins>đ</ins></li>
+                </div>
+              </div>
+              <div class="sanpham-chitiet-mota">
+                <img src="https://product.hstatic.net/1000197303/product/pro_trang_2_9530adbe463e4f01828657f19214d24f_grande.jpg">
+                <div class="sanpham-chitiet-mota-them">
+                  <li class="tensp"><a href="#">Áo 2 dây viền ren nhún thun eo</a> </li>
+                  <li>127,000<ins>đ</ins></li>
+                </div>
+              </div>
+              <div class="sanpham-chitiet-mota">
+                <img src="https://product.hstatic.net/1000197303/product/pro_trang_3_1a3fe8d713bd4d43a3a35e9a100a4f27_grande.jpg">
+                <div class="sanpham-chitiet-mota-them">
+                  <li class="tensp"><a href="#">Áo voan tay dài thêu hoa, cổ tròn phối bèo</a> </li>
+                  <li>925,000<ins>đ</ins></li>
+                </div>
+              </div>
+              <div class="sanpham-chitiet-mota">
+                <img src="https://product.hstatic.net/1000197303/product/pro_hong_02_1_6fbddf48a4c74f4da994c75d23196b4a_grande.jpg">
+                <div class="sanpham-chitiet-mota-them">
+                  <li class="tensp"><a href="#">Áo sơ mi kẻ sọc form oversize</a> </li>
+                  <li>119,000<ins>đ</ins></li>
+                </div>
+              </div>
+              <div class="sanpham-chitiet-mota">
+                <img src="https://product.hstatic.net/1000197303/product/pro_den_3_955baed1b0cb433083c3775b9ae76e02_grande.jpg">
+                <div class="sanpham-chitiet-mota-them">
+                  <li class="tensp"><a href="#">Áo cardigan phối viền thắt nơ</a> </li>
+                  <li>295,000<ins>đ</ins></li>
+                </div>
+              </div>
+              <div class="sanpham-chitiet-mota">
+                <img src="https://product.hstatic.net/1000197303/product/pro_xam_01_2_9789638ef6bb470a893530bb1bb7ad75_grande.jpg">
+                <div class="sanpham-chitiet-mota-them">
+                  <li class="tensp"><a href="#">Váy mini tennis cơ bản</a> </li>
+                  <li>175,500<ins>đ</ins></li>
+                </div>
+              </div>
+              <div class="sanpham-chitiet-mota">
+                <img src="https://product.hstatic.net/1000197303/product/pro_xanh_duong_2_cee0752f029441a4a41634667ed9afbd_grande.jpg">
+                <div class="sanpham-chitiet-mota-them">
+                  <li class="tensp"><a href="#">Áo blazer form cơ bản tay dài 2 túi</a> </li>
+                  <li>175,500<ins>đ</ins></li>
+                </div>
+              </div>
+              <div class="sanpham-chitiet-mota">
+                <img src="https://product.hstatic.net/1000197303/product/pro_xam_01_3_99033f3cbecc4c12ba71cc5614a0fb7a_grande.jpg">
+                <div class="sanpham-chitiet-mota-them">
+                  <li class="tensp"><a href="#">Áo 2 dây croptop phối bèo nhún thun eo</a> </li>
+                  <li>197,000<ins>đ</ins></li>
+                </div>
+              </div>
+              <div class="sanpham-chitiet-mota">
+                <img src="https://product.hstatic.net/1000197303/product/pro_hong_02_1_3624eb171f524689bde1cb080d8a1b1d_grande.jpg">
+                <div class="sanpham-chitiet-mota-them">
+                  <li class="tensp"><a href="#">Áo blazer nhún xắn tay cách điệu</a> </li>
+                  <li>695,000<ins>đ</ins></li>
+                </div>
+              </div>
+
+
+
+
+            </div>
+
+           </div>
+
+        </div>
+    </section>
+    <section>
+      <div class="sanphambanchay"  id="sanphambanchay" style="display: none;"> 
+        <div class="sanpham-chitiet">
+         <div class="sanpham-chitiet-mota">
+             <img src="https://product.hstatic.net/1000197303/product/pro_ca_ro_01_3_beef32a696584d7096e1ba4c49e2c2ab_grande.jpg">
+             <div class="sanpham-chitiet-mota-them">
+               <li class="tensp"><a href="#">Áo khoác vải tweed cổ tròn cài nút bọc</a> </li>
+               <li>416,500<ins>đ</ins></li>
+             </div>
+           </div>
+           <div class="sanpham-chitiet-mota">
+             <img src="https://product.hstatic.net/1000197303/product/pro_den_1_ef51f729d652463485f4ed8f0a2b19d7_grande.jpg">
+             <div class="sanpham-chitiet-mota-them">
+               <li class="tensp"><a href="#">Áo 2 dây caro đính hàng nút phối ren</a> </li>
+               <li>200,000<ins>đ</ins></li>
+             </div>
+           </div>
+           <div class="sanpham-chitiet-mota">
+             <img src="https://product.hstatic.net/1000197303/product/pro_xanh_duong_01_2_a03669a4b05d43869f7bd85f4498c28b_grande.jpg">
+             <div class="sanpham-chitiet-mota-them">
+               <li class="tensp"><a href="http://127.0.0.1:5500/ChiTietSP/ChiTietSP3.html">Áo sơ mi croptop 2 túi trước đính nơ</a> </li>
+               <li>200,000<ins>đ</ins></li>
+             </div>
+           </div>
+           <div class="sanpham-chitiet-mota">
+             <img src="https://product.hstatic.net/1000197303/product/pro_trang_3_1a3fe8d713bd4d43a3a35e9a100a4f27_grande.jpg">
+             <div class="sanpham-chitiet-mota-them">
+               <li class="tensp"><a href="http://127.0.0.1:5500/ChiTietSP/ChiTietSP4.html">Áo voan tay dài thêu hoa, cổ tròn phối bèo</a> </li>
+               <li>600,000<ins>đ</ins></li>
+             </div>
+           </div>
+           <div class="sanpham-chitiet-mota">
+             <img src="https://product.hstatic.net/1000197303/product/pro_trang_2_bdc7313a1e6f4f1db19b7c5d122b8871_grande.jpg">
+             <div class="sanpham-chitiet-mota-them">
+               <li class="tensp"><a href="http://127.0.0.1:5500/ChiTietSP/ChiTietSP5.html">Áo sơ mi tay dài cột nơ tay</a> </li>
+               <li>180,000<ins>đ</ins></li>
+             </div>
+           </div>
+           <div class="sanpham-chitiet-mota">
+             <img src="https://product.hstatic.net/1000197303/product/pro_xanh_duong_2_16bc6de460814d5c810ac2e28de3c171_grande.jpg">
+             <div class="sanpham-chitiet-mota-them">
+               <li class="tensp"><a href="http://127.0.0.1:5500/ChiTietSP/ChiTietSP6.html">Áo khoác jean tay dài form ngắn</a> </li>
+               <li>345,000<ins>đ</ins></li>
+             </div>
+           </div>
+           <div class="sanpham-chitiet-mota">
+             <img src="https://product.hstatic.net/1000197303/product/pro_hong_01_1_3a0204b27edc4299940c91a7f36a0a97_grande.jpg">
+             <div class="sanpham-chitiet-mota-them">
+               <li class="tensp"><a href="http://127.0.0.1:5500/ChiTietSP/ChiTietSP7.html">Áo 2 dây lụa thắt nơ ngực</a> </li>
+               <li>695,000<ins>đ</ins></li>
+             </div>
+           </div>
+           <div class="sanpham-chitiet-mota">
+             <img src="https://product.hstatic.net/1000197303/product/pro_kem_01_2_314048d2e6b64ccabc6f81395a6a3711_grande.jpg">
+             <div class="sanpham-chitiet-mota-them">
+               <li class="tensp"><a href="http://127.0.0.1:5500/ChiTietSP/ChiTietSP8.html">Áo kiểu cổ tròn rút vai thắt nơ</a> </li>
+               <li>595,000<ins>đ</ins></li>
+             </div>
+           </div>
+           <div class="sanpham-chitiet-mota">
+             <img src="https://product.hstatic.net/1000197303/product/pro_kem_01_3_8344fe78ba7d4573a21e6283339cc874_grande.jpg">
+             <div class="sanpham-chitiet-mota-them">
+               <li class="tensp"><a href="#">Áo ren 2 dây croptop phối viền đính nơ</a> </li>
+               <li>175,500<ins>đ</ins></li>
+             </div>
+           </div>
+           <div class="sanpham-chitiet-mota">
+             <img src="https://product.hstatic.net/1000197303/product/pro_den_1_f5537242fbd04a609670fe0109c65cd9_grande.jpg">
+             <div class="sanpham-chitiet-mota-them">
+               <li class="tensp"><a href="#">Áo kiểu vải sheer tay phồng phối gile</a> </li>
+               <li>197,000<ins>đ</ins></li>
+             </div>
+           </div>
+           <div class="sanpham-chitiet-mota">
+             <img src="https://product.hstatic.net/1000197303/product/pro_kem_01_3_a9dabff738b64be1bc04772fb3c31337_grande.jpg">
+             <div class="sanpham-chitiet-mota-them">
+               <li class="tensp"><a href="#">Áo gile form ôm cài nút bọc</a> </li>
+               <li>355,000<ins>đ</ins></li>
+             </div>
+           </div>
+           <div class="sanpham-chitiet-mota">
+             <img src="https://product.hstatic.net/1000197303/product/pro_da_01_2_bace42181a764a488cb3bb118b23c337_grande.jpg">
+             <div class="sanpham-chitiet-mota-them">
+               <li class="tensp"><a href="#">Áo khoác ngắn cổ vest đệm vai cài nút</a> </li>
+               <li>175,500<ins>đ</ins></li>
+             </div>
+           </div>
+           <div class="sanpham-chitiet-mota">
+             <img src="https://product.hstatic.net/1000197303/product/pro_trang_2_9530adbe463e4f01828657f19214d24f_grande.jpg">
+             <div class="sanpham-chitiet-mota-them">
+               <li class="tensp"><a href="#">Áo 2 dây viền ren nhún thun eo</a> </li>
+               <li>127,000<ins>đ</ins></li>
+             </div>
+           </div>
+           <div class="sanpham-chitiet-mota">
+             <img src="https://product.hstatic.net/1000197303/product/pro_trang_3_1a3fe8d713bd4d43a3a35e9a100a4f27_grande.jpg">
+             <div class="sanpham-chitiet-mota-them">
+               <li class="tensp"><a href="#">Áo voan tay dài thêu hoa, cổ tròn phối bèo</a> </li>
+               <li>925,000<ins>đ</ins></li>
+             </div>
+           </div>
+           <div class="sanpham-chitiet-mota">
+             <img src="https://product.hstatic.net/1000197303/product/pro_hong_02_1_6fbddf48a4c74f4da994c75d23196b4a_grande.jpg">
+             <div class="sanpham-chitiet-mota-them">
+               <li class="tensp"><a href="#">Áo sơ mi kẻ sọc form oversize</a> </li>
+               <li>119,000<ins>đ</ins></li>
+             </div>
+           </div>
+           <div class="sanpham-chitiet-mota">
+             <img src="https://product.hstatic.net/1000197303/product/pro_den_3_955baed1b0cb433083c3775b9ae76e02_grande.jpg">
+             <div class="sanpham-chitiet-mota-them">
+               <li class="tensp"><a href="#">Áo cardigan phối viền thắt nơ</a> </li>
+               <li>295,000<ins>đ</ins></li>
+             </div>
+           </div>
+           <div class="sanpham-chitiet-mota">
+             <img src="https://product.hstatic.net/1000197303/product/pro_xam_01_2_9789638ef6bb470a893530bb1bb7ad75_grande.jpg">
+             <div class="sanpham-chitiet-mota-them">
+               <li class="tensp"><a href="#">Váy mini tennis cơ bản</a> </li>
+               <li>175,500<ins>đ</ins></li>
+             </div>
+           </div>
+           <div class="sanpham-chitiet-mota">
+             <img src="https://product.hstatic.net/1000197303/product/pro_xanh_duong_2_cee0752f029441a4a41634667ed9afbd_grande.jpg">
+             <div class="sanpham-chitiet-mota-them">
+               <li class="tensp"><a href="#">Áo blazer form cơ bản tay dài 2 túi</a> </li>
+               <li>175,500<ins>đ</ins></li>
+             </div>
+           </div>
+           <div class="sanpham-chitiet-mota">
+             <img src="https://product.hstatic.net/1000197303/product/pro_xam_01_3_99033f3cbecc4c12ba71cc5614a0fb7a_grande.jpg">
+             <div class="sanpham-chitiet-mota-them">
+               <li class="tensp"><a href="#">Áo 2 dây croptop phối bèo nhún thun eo</a> </li>
+               <li>197,000<ins>đ</ins></li>
+             </div>
+           </div>
+           <div class="sanpham-chitiet-mota">
+             <img src="https://product.hstatic.net/1000197303/product/pro_hong_02_1_3624eb171f524689bde1cb080d8a1b1d_grande.jpg">
+             <div class="sanpham-chitiet-mota-them">
+               <li class="tensp"><a href="#">Áo blazer nhún xắn tay cách điệu</a> </li>
+               <li>695,000<ins>đ</ins></li>
+             </div>
+           </div>
+         </div>
+        </div>
+     </div>
+    </section>
+    <section>
+      <div class="sanphammoinhat"  id="sanphammoinhat" style="display: none;"> 
+        <div class="sanpham-chitiet">
+          <div class="sanpham-chitiet-mota">
+            <img src="https://product.hstatic.net/1000197303/product/pro_xanh_duong_01_2_a03669a4b05d43869f7bd85f4498c28b_grande.jpg">
+            <div class="sanpham-chitiet-mota-them">
+              <li class="tensp"><a href="http://127.0.0.1:5500/ChiTietSP/ChiTietSP3.html">Áo sơ mi croptop 2 túi trước đính nơ</a> </li>
+              <li>200,000<ins>đ</ins></li>
+            </div>
+          </div>
+          <div class="sanpham-chitiet-mota">
+            <img src="https://product.hstatic.net/1000197303/product/pro_xanh_duong_2_16bc6de460814d5c810ac2e28de3c171_grande.jpg">
+            <div class="sanpham-chitiet-mota-them">
+              <li class="tensp"><a href="http://127.0.0.1:5500/ChiTietSP/ChiTietSP6.html">Áo khoác jean tay dài form ngắn</a> </li>
+              <li>345,000<ins>đ</ins></li>
+            </div>
+          </div>
+         
+           <div class="sanpham-chitiet-mota">
+            <img src="https://product.hstatic.net/1000197303/product/pro_da_01_2_bace42181a764a488cb3bb118b23c337_grande.jpg">
+            <div class="sanpham-chitiet-mota-them">
+              <li class="tensp"><a href="#">Áo khoác ngắn cổ vest đệm vai cài nút</a> </li>
+              <li>175,500<ins>đ</ins></li>
+            </div>
+          </div>
+           <div class="sanpham-chitiet-mota">
+             <img src="https://product.hstatic.net/1000197303/product/pro_den_1_ef51f729d652463485f4ed8f0a2b19d7_grande.jpg">
+             <div class="sanpham-chitiet-mota-them">
+               <li class="tensp"><a href="#">Áo 2 dây caro đính hàng nút phối ren</a> </li>
+               <li>200,000<ins>đ</ins></li>
+             </div>
+           </div>
+           <div class="sanpham-chitiet-mota">
+            <img src="https://product.hstatic.net/1000197303/product/pro_hong_02_1_6fbddf48a4c74f4da994c75d23196b4a_grande.jpg">
+            <div class="sanpham-chitiet-mota-them">
+              <li class="tensp"><a href="#">Áo sơ mi kẻ sọc form oversize</a> </li>
+              <li>119,000<ins>đ</ins></li>
+            </div>
+          </div>
+          <div class="sanpham-chitiet-mota">
+             <img src="https://product.hstatic.net/1000197303/product/pro_hong_02_1_6fbddf48a4c74f4da994c75d23196b4a_grande.jpg">
+             <div class="sanpham-chitiet-mota-them">
+               <li class="tensp"><a href="#">Áo sơ mi kẻ sọc form oversize</a> </li>
+               <li>119,000<ins>đ</ins></li>
+             </div>
+           </div>
+           <div class="sanpham-chitiet-mota">
+            <img src="https://product.hstatic.net/1000197303/product/pro_den_3_955baed1b0cb433083c3775b9ae76e02_grande.jpg">
+            <div class="sanpham-chitiet-mota-them">
+              <li class="tensp"><a href="#">Áo cardigan phối viền thắt nơ</a> </li>
+              <li>295,000<ins>đ</ins></li>
+            </div>
+          </div>
+           <div class="sanpham-chitiet-mota">
+             <img src="https://product.hstatic.net/1000197303/product/pro_trang_2_bdc7313a1e6f4f1db19b7c5d122b8871_grande.jpg">
+             <div class="sanpham-chitiet-mota-them">
+               <li class="tensp"><a href="http://127.0.0.1:5500/ChiTietSP/ChiTietSP5.html">Áo sơ mi tay dài cột nơ tay</a> </li>
+               <li>180,000<ins>đ</ins></li>
+             </div>
+           </div>
+          
+           <div class="sanpham-chitiet-mota">
+             <img src="https://product.hstatic.net/1000197303/product/pro_hong_01_1_3a0204b27edc4299940c91a7f36a0a97_grande.jpg">
+             <div class="sanpham-chitiet-mota-them">
+               <li class="tensp"><a href="http://127.0.0.1:5500/ChiTietSP/ChiTietSP7.html">Áo 2 dây lụa thắt nơ ngực</a> </li>
+               <li>695,000<ins>đ</ins></li>
+             </div>
+           </div>
+           <div class="sanpham-chitiet-mota">
+             <img src="https://product.hstatic.net/1000197303/product/pro_kem_01_2_314048d2e6b64ccabc6f81395a6a3711_grande.jpg">
+             <div class="sanpham-chitiet-mota-them">
+               <li class="tensp"><a href="http://127.0.0.1:5500/ChiTietSP/ChiTietSP8.html">Áo kiểu cổ tròn rút vai thắt nơ</a> </li>
+               <li>595,000<ins>đ</ins></li>
+             </div>
+           </div>
+           <div class="sanpham-chitiet-mota">
+             <img src="https://product.hstatic.net/1000197303/product/pro_kem_01_3_8344fe78ba7d4573a21e6283339cc874_grande.jpg">
+             <div class="sanpham-chitiet-mota-them">
+               <li class="tensp"><a href="#">Áo ren 2 dây croptop phối viền đính nơ</a> </li>
+               <li>175,500<ins>đ</ins></li>
+             </div>
+           </div>
+           <div class="sanpham-chitiet-mota">
+            <img src="https://product.hstatic.net/1000197303/product/pro_ca_ro_01_3_beef32a696584d7096e1ba4c49e2c2ab_grande.jpg">
+            <div class="sanpham-chitiet-mota-them">
+              <li class="tensp"><a href="#">Áo khoác vải tweed cổ tròn cài nút bọc</a> </li>
+              <li>416,500<ins>đ</ins></li>
+            </div>
+          </div>
+           <div class="sanpham-chitiet-mota">
+             <img src="https://product.hstatic.net/1000197303/product/pro_den_1_f5537242fbd04a609670fe0109c65cd9_grande.jpg">
+             <div class="sanpham-chitiet-mota-them">
+               <li class="tensp"><a href="#">Áo kiểu vải sheer tay phồng phối gile</a> </li>
+               <li>197,000<ins>đ</ins></li>
+             </div>
+           </div>
+           <div class="sanpham-chitiet-mota">
+             <img src="https://product.hstatic.net/1000197303/product/pro_kem_01_3_a9dabff738b64be1bc04772fb3c31337_grande.jpg">
+             <div class="sanpham-chitiet-mota-them">
+               <li class="tensp"><a href="#">Áo gile form ôm cài nút bọc</a> </li>
+               <li>355,000<ins>đ</ins></li>
+             </div>
+           </div>
+        
+           <div class="sanpham-chitiet-mota">
+             <img src="https://product.hstatic.net/1000197303/product/pro_trang_2_9530adbe463e4f01828657f19214d24f_grande.jpg">
+             <div class="sanpham-chitiet-mota-them">
+               <li class="tensp"><a href="#">Áo 2 dây viền ren nhún thun eo</a> </li>
+               <li>127,000<ins>đ</ins></li>
+             </div>
+           </div>
+           <div class="sanpham-chitiet-mota">
+             <img src="https://product.hstatic.net/1000197303/product/pro_trang_3_1a3fe8d713bd4d43a3a35e9a100a4f27_grande.jpg">
+             <div class="sanpham-chitiet-mota-them">
+               <li class="tensp"><a href="#">Áo voan tay dài thêu hoa, cổ tròn phối bèo</a> </li>
+               <li>925,000<ins>đ</ins></li>
+             </div>
+           </div>
+           
+          
+           <div class="sanpham-chitiet-mota">
+             <img src="https://product.hstatic.net/1000197303/product/pro_xam_01_2_9789638ef6bb470a893530bb1bb7ad75_grande.jpg">
+             <div class="sanpham-chitiet-mota-them">
+               <li class="tensp"><a href="#">Váy mini tennis cơ bản</a> </li>
+               <li>175,500<ins>đ</ins></li>
+             </div>
+           </div>
+           <div class="sanpham-chitiet-mota">
+             <img src="https://product.hstatic.net/1000197303/product/pro_xanh_duong_2_cee0752f029441a4a41634667ed9afbd_grande.jpg">
+             <div class="sanpham-chitiet-mota-them">
+               <li class="tensp"><a href="#">Áo blazer form cơ bản tay dài 2 túi</a> </li>
+               <li>175,500<ins>đ</ins></li>
+             </div>
+           </div>
+           <div class="sanpham-chitiet-mota">
+             <img src="https://product.hstatic.net/1000197303/product/pro_xam_01_3_99033f3cbecc4c12ba71cc5614a0fb7a_grande.jpg">
+             <div class="sanpham-chitiet-mota-them">
+               <li class="tensp"><a href="#">Áo 2 dây croptop phối bèo nhún thun eo</a> </li>
+               <li>197,000<ins>đ</ins></li>
+             </div>
+           </div>
+           <div class="sanpham-chitiet-mota">
+             <img src="https://product.hstatic.net/1000197303/product/pro_hong_02_1_3624eb171f524689bde1cb080d8a1b1d_grande.jpg">
+             <div class="sanpham-chitiet-mota-them">
+               <li class="tensp"><a href="#">Áo blazer nhún xắn tay cách điệu</a> </li>
+               <li>695,000<ins>đ</ins></li>
+             </div>
+           </div>
+         </div>
+        </div>
+     </div>
+    </section>
+    <section class="mota" >
+        <div class="motas">
+            <p>Ngoài áo sơ mi thì <b>áo kiểu</b> là một trong những item thời trang không thể thiếu trong các tủ đồ của các cô gái của chúng ta, dù nàng đang ở độ tuổi nào đi chăng nữa hãy theo đuổi phong cách gì thì việc có một item trong tủ đồ sẽ giúp phong cách của nàng đa dạng hơn. Dưới đây, nhà MARC giới thiệu những mẫu áo kiểu đang được yêu thích nhất thời gian gần đây để chị em tham khảo.
+</p>
+        </div>
+    </section>
+    <div class="img-footer">
+        <img src="https://theme.hstatic.net/1000197303/1001046599/14/logo.png?v=8940">
+    </div>
+    <section class="footer">
+        <div class="footer-1">
+            <div class="row"> 
+                <div class="row-1">
+                    <div class="row-1-2">
+                        <ul>
+                            <li>
+                                <a href="http://online.gov.vn/Home/WebDetails/66846?AspxAutoDetectCookieSupport=1" target="_blank">
+                                    <img src="https://theme.hstatic.net/1000197303/1001046599/14/logo_bct.png?v=8940" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/marcfashion" target="_blank">
+                                    <i class="fa-brands fa-square-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/marcfashionvn/" target="_blank">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.tiktok.com/@marcfashion" target="_blank">
+                                    <i class="fa-brands fa-tiktok"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="iki"> 
+                        <ul>
+                            <li>
+                                <p>Thương hiệu thời trang MARC - CÔNG TY CỔ PHẦN SẢN XUẤT<br> THƯƠNG MẠI NÉT VIỆT</p>
+                            </li>
+                            <li>
+                               <p>Địa chỉ: Tầng 15.06 Tòa nhà Văn phòng Golden King, Số 15<br> Nguyễn Lương Bằng, Phường Tân Phú, Quận 7, Tp. HCM</p> 
+                            </li>
+                        </ul>
+                    </div> 
+
+                </div>
+                <div class="row-1">
+                    <ul>Về chúng tôi
+                        <li><a href="http://127.0.0.1:5500/ThongTin/ThongTin.html" >Giới thiệu MARC</a></li>
+                        <li><a >Tuyển dụng</a></li>
+                        <li><a>Cảm hứng thời trang</a></li>
+                        <li><a>Danh sách cửa hàng</a></li>
+                        <li><a>Nhượng quyền thương hiệu</a></li>
+                        <li><a>Khách hàng thân thiết</a></li>
+                        <li><a>Chính sách giao hàng</a></li>
+                        <li><a>Chính sách bảo hành</a></li>
+                    </ul>
+
+                </div>
+                <div class="row-1">
+                    <ul>Hỗ trợ khách hàng
+                        <li><a>Liên hệ đến MARC</a></li>
+                        <li><a>Câu hỏi thường gặp</a></li>
+                        <li><a>Hướng dẫn tạo tài khoản</a></li>
+                        <li><a>Hướng dẫn đặt hàng</a></li>
+                        <li><a>Mua Online nhận tại cửa hàng</a></li>
+                        <li><a>Hướng dẫn mua trước trả sau</a></li>
+                        <li><a>Quy định và hướng dẫn đổi/trả hàng</a></li>
+                        <li><a>Hướng dẫn đánh giá sản phẩm</a></li>
+                        <li><a>Hướng dẫn xem và đổi thưởng</a></li>
+                    </ul>
+
+                </div>
+                <div class="row-1">
+                    <ul>Liên lạc
+                        <li>Đặt hàng trực tuyến (8h-21h) </li>
+                        <li class="sdt"><b>1900 636942</b></li>
+                        <li>Chăm sóc khách hàng </li>
+                        <li class="sdt"><b>1900 636940</b></li>
+                        <li>marcsalesonline@gmail.com</li>
+                      
+                    </ul>
+
+                </div>
+                
+
+            </div>
+            
+
+
+        </div>
+
+    </section>
+    <script src="DanhMucAoKieu.js"></script>
+</body>

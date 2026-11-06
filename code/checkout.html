@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thanh toán | Sebastian Sportwear</title>
+<meta name="description" content="Nhập thông tin giao hàng và xác nhận đơn.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600;700&display=swap&subset=vietnamese" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body data-page="checkout">
+<div id="site-header"></div>
+<section class="page-head"><div class="container"><div class="crumb"><a href="index.html">Trang chủ</a> / <a href="cart.html">Giỏ hàng</a> / Thanh toán</div><h1>Thanh toán</h1></div></section>
+<main class="section"><div class="container" id="coBox">
+<form class="row g-5 needs-validation" id="coForm" novalidate>
+  <div class="col-lg-7">
+    <h4>Thông tin giao hàng</h4>
+    <div class="row g-3 mb-4">
+      <div class="col-md-6"><label class="form-label" for="name">Họ và tên</label><input class="form-control" id="name" required><div class="invalid-feedback">Nhập họ và tên.</div></div>
+      <div class="col-md-6"><label class="form-label" for="phone">Số điện thoại</label><input class="form-control" id="phone" pattern="0[0-9]{9}" required><div class="invalid-feedback">Nhập số điện thoại 10 số, bắt đầu bằng 0.</div></div>
+      <div class="col-12"><label class="form-label" for="email">Email</label><input type="email" class="form-control" id="email" required><div class="invalid-feedback">Nhập email hợp lệ.</div></div>
+      <div class="col-12"><label class="form-label" for="addr">Địa chỉ nhận hàng</label><input class="form-control" id="addr" required><div class="invalid-feedback">Nhập địa chỉ nhận hàng.</div></div>
+      <div class="col-12"><label class="form-label" for="note">Ghi chú (không bắt buộc)</label><textarea class="form-control" id="note" rows="2"></textarea></div>
+    </div>
+    <h4>Phương thức thanh toán</h4>
+    <label class="pay-opt"><input type="radio" name="pay" checked>Thanh toán khi nhận hàng (COD)</label>
+    <label class="pay-opt"><input type="radio" name="pay">Chuyển khoản ngân hàng</label>
+  </div>
+  <div class="col-lg-5"><div class="summary"><h4>Đơn hàng của bạn</h4><div id="coItems"></div>
+    <div class="input-group my-3"><input class="form-control" id="coupon" placeholder="Mã giảm giá"><button type="button" class="btn btn-ink" id="applyCoupon">Áp dụng</button></div>
+    <div class="row-line"><span>Tạm tính</span><span id="sub"></span></div><div class="row-line"><span>Giảm giá</span><span id="disc">0₫</span></div><div class="row-line"><span>Phí giao hàng</span><span id="ship"></span></div>
+    <div class="row-line row-total"><span>Tổng</span><span id="grand"></span></div>
+    <button class="btn btn-sw w-100 mt-3">Đặt hàng</button></div></div>
+</form></div></main>
+<div id="site-footer"></div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/layout.js"></script>
+<script>
+
+let discount = 0;
+const items = Cart.all();
+if (!items.length) { $('#coBox').html('<div class="empty-box">Giỏ hàng đang trống, chưa có gì để thanh toán.<br><a class="btn btn-sw mt-3" href="products.html">Chọn sản phẩm</a></div>'); }
+else {
+  $('#coItems').html(items.map((it) => { const p = getP(it.id); return `<div class="row-line"><span>${p.name} <small class="text-muted-sw">(${it.size}) x${it.qty}</small></span><span>${money(p.price * it.qty)}</span></div>`; }).join(''));
+  const calc = () => { const sub = Cart.total(), ship = sub >= 500000 ? 0 : 30000; $('#sub').text(money(sub)); $('#disc').text('-' + money(discount)); $('#ship').text(ship ? money(ship) : 'Miễn phí'); $('#grand').text(money(sub - discount + ship)); };
+  calc();
+  $('#applyCoupon').on('click', () => { if ($('#coupon').val().trim().toUpperCase() === 'SEBASTIAN10') { discount = Math.round(Cart.total() * 0.1); toast('Đã áp dụng mã giảm 10%'); } else { discount = 0; toast('Mã giảm giá không hợp lệ'); } calc(); });
+  $('#coForm').on('submit', function (e) {
+    e.preventDefault();
+    if (!this.checkValidity()) { $(this).addClass('was-validated'); return; }
+    const code = 'SW' + Date.now().toString().slice(-6); Cart.clear();
+    $('#coBox').html(`<div class="empty-box"><h2>Đặt hàng thành công</h2><p>Mã đơn hàng của bạn là <b>${code}</b>. Chúng tôi sẽ liên hệ xác nhận qua số điện thoại.</p><a class="btn btn-sw" href="index.html">Tiếp tục mua sắm</a></div>`);
+  });
+}
+
+</script>
+</body>
+</html>

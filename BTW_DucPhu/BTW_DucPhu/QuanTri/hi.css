@@ -1,0 +1,74 @@
+.header{
+    width: 983px;
+    height: 50px;
+    margin-left: 275px;
+    background-color: #778AC1;
+
+    
+}
+.header-main img{
+    width: 135px;
+    height: 50px;
+}
+.user{
+    text-align: right; 
+    margin-top: -38px;
+    margin-right: 8px;
+}
+.user i{
+    font-size: 20px;
+}
+/*-------------------------------------------------*/
+.left{
+    width: 275px;
+    background-color: #D37171;
+    margin-top: -78px;
+    height: 100%;
+}
+.left-head {
+     font-size: 30px;
+     margin-left: 15px ;
+}
+.left-nd{
+    padding-top:30px;
+}
+.left-nd button{
+    background-color: #D37171;
+    font-family: 'EB Garamond', serif;
+    border: #D37171;
+    font-size: 28px;
+    padding:12px;
+
+}
+
+.home{
+    width: 972px;
+    margin-left: 287px;
+    margin-top: -570px;
+    background-color: blue;
+}
+.home .home-mota img{
+    width: 968px;
+    height: 567px;
+    padding-top: 0px;
+}
+/*--------------------------------------*/
+
+.sanpham{
+    width: 972px;
+    margin-left: 287px;
+    margin-top: -570px;
+
+}
+.sanpham table {
+    border-collapse: collapse;
+    width: 970px;
+}
+.sanpham table tr td {
+    border:solid 1px black;
+    text-align: center;
+}
+tr td img{
+    width: 100px;
+    height: 120px;
+}

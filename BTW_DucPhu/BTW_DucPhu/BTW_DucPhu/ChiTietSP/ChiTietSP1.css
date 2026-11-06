@@ -1,0 +1,677 @@
+header {
+    font-family: 'Comfortaa', sans-serif;
+
+}
+.header-top {
+    font-family: 'Anuphan', sans-serif;
+    background-color:black;
+    color: azure;
+    text-align: center;
+    padding: 4px;
+    font-size: 9px;
+
+}
+
+.container {
+
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.inner-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 0;
+}
+.header-main .logo img {
+    height: 25px;
+    width: auto;
+}
+
+.menu a {
+    text-decoration: none;
+}
+.header-main .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    font-family: 'Jura', sans-serif;
+}
+.header-main .menu ul li a {
+    color: black;
+    font-size: 12px;
+}
+.header-main .menu ul li {
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+}
+.thucthi ul {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+}
+.thucthi ul li {
+    margin-left: 6px;
+    color: black;
+}
+.section-1 img {
+    max-width: 900px;
+    margin-left: 182px;
+    margin-right: auto;
+}
+ul li a {
+    color: black;
+}
+
+.chitiet {
+    position: absolute;
+    background-color: white;
+    width: 300px;
+    height: auto;
+    left: 0;
+    top: 100%;
+    padding: 12px;
+    display: none;
+    z-index: 10;
+    
+}
+.chitiet ul {
+    display: flex;
+    flex-direction: column;
+}
+.chitiet ul li {
+    position: relative;
+    padding: 6px 0;
+}
+
+.header-main .menu ul li:hover .chitiet {
+    display: block;
+}
+.header-main-2 {
+    display: none;
+  }
+  .header-main {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: white;
+  }
+/* ----------------------section------------------- */
+.danhmuc {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+    justify-content: center; 
+    align-items: center; 
+    font-family: 'EB Garamond', serif;
+}
+.danhmuc .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.danhmuc img {
+    max-width: 100px; /* Điều chỉnh kích thước hình ảnh theo ý muốn */
+    height: auto;
+}
+.danhmuc li {
+    list-style-type: none;
+    margin-top: 5px; /* Khoảng cách giữa hình ảnh và văn bản */
+    font-family: 'EB Garamond', serif; /* Điều chỉnh font chữ theo ý muốn */
+    font-size: 14px;
+}
+.danhmucc div p{
+    padding-top: 23px;
+    left: 194px;
+    position:absolute;
+    font-family: 'EB Garamond', serif;
+    font-size: 11px;
+}
+.sticker {
+    position: fixed;
+    bottom: 0; 
+    right: 0; 
+    width: 80px; 
+    height: 100px; 
+   padding: 10px;
+   z-index: 2;
+
+}
+.sticker2{
+    position: fixed;
+    bottom:0;
+    width: 80px;
+    height: 100px;
+    padding: 10px;
+  
+}
+.img-left img {
+    position:absolute;
+    left: 190px;
+    top: 190px;
+    width: 90px;
+    height: 400px;
+}
+.img-left2 img{
+    position: absolute;
+    left: 192px;
+    top: 132px;
+    width: 465px;
+    height: 542px;
+
+}
+
+.img-left2 #img1{
+    position: relative;
+    left: -185px;
+    top: -100px;
+}
+.img-left2 #img2{
+    position: relative;
+    left: 25px;
+    top: -100px;
+}
+.img-left2 #img3{
+    position: relative;
+    left: 240px;
+    top: -100px;
+}
+.sanpham-chitiet-mota-them li a{
+    font-family: 'EB Garamond', serif;
+    color:#313131;
+    font-weight: normal;
+  }
+.sanpham-chitiet-mota-them :nth-child(2){
+    font-weight: bold;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 10px;
+  }
+
+.chitietsp-1{
+    position:absolute;
+    left: 704px;
+    top: 124px;
+
+}
+.chitietsp-1-a p:first-child{
+    font-family: 'EB Garamond', serif;
+    font-size: 19px;
+}
+.chitietsp-1-a p:nth-child(2) {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 9px;
+}
+.chitietsp-1-a p:nth-child(3) {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 9px;
+}
+.chitietsp-1-a p:nth-child(5) {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 9px;
+}
+.chitietsp-1-a .color {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 11px;
+}
+.chitietsp-1-a p:nth-child(3){
+    font-size: 18px;
+}
+.sanpham-chitiet-mota-them :nth-child(2){
+    font-weight: bold;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 10px;
+  }
+
+
+.color img{
+    position: absolute;
+    width: 40px;
+    height:14px;
+    top: 108px;
+    left:136px;
+}
+.chitietsp-1-b{
+    position: absolute;
+    top:122px;
+}
+
+.chitietsp-1-b p {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 11px;
+}
+.chitietsp-1-d {
+    border:1px solid black;
+    border-radius: 18px;
+    background-color: aliceblue;
+}
+.chitietsp-2{
+    position: absolute;
+    top: 120px;
+
+
+}
+.chitietsp-2-a{
+    font-size: 12px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.chitietsp-2-b{
+   
+    border-radius: 8px;
+    background-color: white;
+ 
+}
+.chitietsp-2-c{
+    font-weight: bold;
+    font-size: 12px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    position: absolute;
+    top: 180px;
+
+}
+.mota_sp{
+    margin-left: -18px;
+    width: 300px;
+    font-size: 12px;
+    display:block;
+}
+
+.chitietsp-2-d{
+    position: absolute;
+    top:461px;
+    left: 703px;
+    font-family: 'EB Garamond', serif;
+}
+.chitietsp-2-d i:first-child{
+    margin-left: 150px;
+    font-size: 12px;
+    color:#D37171;
+}
+.chitietsp-2-d .baoquan i{
+    margin-left: 129px;
+}
+small{
+    text-decoration: line-through;
+}
+
+
+.themvaogio {
+    padding: 15px 25px;        /* Tạo khoảng đệm bên trong phần tử */
+    cursor: pointer;           /* Hiển thị con trỏ chuột khi di chuột qua */
+    text-align: center;        /* Căn giữa văn bản bên trong phần tử */
+    text-decoration: none;     /* Loại bỏ gạch chân dưới văn bản */
+    color: #D37171;         /* Màu chữ */
+    background-color: white;   /* Màu nền */
+    border: 1px solid;         /* Đường viền */
+    position: absolute;        /* Định vị tuyệt đối phần tử */
+    margin-left: -2px;          /* Khoảng cách từ phần tử bên trái */
+    display: flex;             /* Hiển thị phần tử dưới dạng flexbox */
+    top: 89px;                 /* Khoảng cách từ phần tử phía trên */
+}
+/* .themvaogio:hover{
+    background-color:dodgerblue;
+} */
+.tru{
+    margin-right: -1px;
+    height: 21px;
+    background-color:#D9D9D9;
+    border:1px solid #D9D9D9;
+
+}
+.min{
+  
+   height: 20px;
+   width: 40px;
+   border:1px solid #D9D9D9;
+}
+.cong{
+   margin-left: -2px;
+   height: 21px;
+   background-color:#D9D9D9;
+   border:1px solid #D9D9D9;
+   
+}
+
+.chonmua{
+    position:absolute;
+    display:flex;
+    padding: 16px 35px;   
+    cursor: pointer;  
+    text-align: center;  
+    text-decoration: none;  
+    color: #fff; 
+    background-color: #D37171;
+    border: none;  
+    top:88px;
+    margin-left: 133px;
+}
+/* .chonmua:hover{
+  background-color:dodgerblue;
+} */
+hr{
+    width: 268px;
+}
+.danhgia{
+    position: absolute;
+    top: 689px;
+    left: 220px;
+}
+.danhgia ul{
+    display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử con theo chiều ngang */
+    flex-wrap: wrap; /* Cho phép các phần tử con xuống dòng nếu không đủ không gian */
+    justify-content: space-between; /* Tạo khoảng cách đều giữa các phần tử con */
+    align-items: flex-start; /* Căn chỉnh các phần tử theo trục dọc */
+    padding: 0 30px; /* Khoảng cách giữa các phần tử con và hai bên lề */
+    list-style-type: none;
+    gap: 9px;
+}
+.danhgia ul li i{
+    font-size: 11px;
+    color:#D37171;
+}
+.danhgia ul li:first-child{
+    font-weight: bold;
+    font-size: 12px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.danhgia ul li:nth-child(3){
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 10px;
+}
+.danhgia ul li:nth-child(4){
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 10px;
+    color:lightslategrey;
+}
+.chuadg{
+    position: absolute;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 10px;
+    left:30px;
+    top:26px;
+    color:lightslategrey;
+}
+
+.chitiet {
+    position: absolute;
+    background-color: white;
+    width: 300px;
+    height: auto;
+    left: 0;
+    top: 100%;
+    padding: 12px;
+    display: none;
+    z-index: 10;
+    
+}
+.chitiet ul {
+    display: flex;
+    flex-direction: column;
+}
+.chitiet ul li {
+    position: relative;
+    padding: 6px 0;
+}
+.chitiet ul li:hover a {
+    color: lightblue;
+}
+.chitiet ul li:hover {
+    background: none;
+}
+
+.chitiet {
+    position: absolute;
+    background-color: white;
+    width: 300px;
+    height: auto;
+    left: 0;
+    top: 100%;
+    padding: 12px;
+    display: none;
+    z-index: 10;
+    
+}
+.chitiet ul {
+    display: flex;
+    flex-direction: column;
+}
+.chitiet ul li {
+    position: relative;
+    padding: 6px 0;
+}
+.chitiet ul li:hover a {
+    color: lightblue;
+}
+.chitiet ul li:hover {
+    background: none;
+}
+
+.sanpham{
+    padding-top:20px;
+    position:  absolute;
+    top:780px;
+    max-width: 900px; 
+}
+
+.sanpham-chitiet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    gap: 19px;
+}
+.gioithieu{
+   position:absolute;
+    font-family: 'EB Garamond', serif;
+    left:500px;
+    top:-48px;
+   font-size: 22px;
+}
+.sanpham-chitiet-panel {
+    position: relative;
+    width: 100%;
+    left: 20%;
+    z-index: 1;
+    margin-left: 350px;
+    font-size: 22px;
+}
+
+.sanpham-chitiet-mota {
+
+   
+    position: relative;
+    left: 185px; 
+    max-width: 210px;
+    box-sizing: border-box;
+    margin-bottom: 20px; 
+
+}
+
+.sanpham-chitiet-mota img {
+    width: 100%;
+    height: auto;
+}
+
+.sanpham-chitiet-mota-them {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px; 
+}
+
+.sanpham-chitiet-mota-them li {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.tensp {
+    font-family: 'EB Garamond', serif;
+}
+.tensp a{
+    text-decoration: none;
+}
+
+.sanpham-chitiet-mota-them li a:nth-child(2) {
+    text-decoration: line-through;
+}
+
+.sanpham-chitiet-mota li i:nth-child(1) {
+    color: antiquewhite;
+}
+
+.sanpham-chitiet-mota li i:nth-child(2) {
+    color: dodgerblue;
+}
+
+.sanpham-chitiet-mota li i:nth-child(3) {
+    color: gray;
+}
+
+.highlight {
+    color: white;
+    position:absolute;
+    top:0px;
+    background-color: lightcoral;
+    border:1px solid;
+    font-size: 16px;
+}
+/* ----------------------section------------------- */
+.footer{
+    max-width: 1200px;
+}
+.img-footer img{
+    height: 35px;
+    width: 100px;
+    margin-left: 209px;
+    padding-top: 3225px;
+}
+.footer-1 .row {
+    position:absolute;
+    display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử con theo chiều ngang */
+    flex-wrap: wrap; /* Cho phép các phần tử con xuống dòng nếu không đủ không gian */
+    justify-content: space-between; /* Tạo khoảng cách đều giữa các phần tử con */
+    align-items: flex-start; /* Căn chỉnh các phần tử theo trục dọc */
+    margin-left: 176px;
+    top: 3190px;
+}
+
+.footer-1 .row .row-1 {
+    flex: 1; /* Đảm bảo các phần tử con chia đều không gian */
+    margin: 25px; /* Thêm khoảng cách xung quanh các phần tử con */
+}
+
+.footer-1 .row .row-1 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-1 .row .row-1 .row-1-2 ul {
+    list-style-type: none;
+    padding: 9px;
+    display: flex;
+    align-items: center; /* Căn giữa theo trục dọc */
+    gap: 12px;
+}
+.row{
+    position: absolute;
+    top:500px;
+}
+.row-1-2 ul li a img {
+    width: 110px;
+}
+.footer-1 a:hover { 
+    color: indianred;
+    text-decoration: none; 
+}
+
+
+.iki ul li {
+    list-style-type: none;
+}
+
+.iki ul li a {
+    font-family: 'EB Garamond', serif;
+}
+
+.iki ul li p {
+    font-family: 'EB Garamond', serif;
+    font-size: 9px;
+    margin-left: 20px;
+}
+.row .row-1 ul li{
+    font-family: 'EB Garamond', serif;
+    font-size: 12px;
+
+}
+.row{
+    margin-left: 150px;
+}
+.row-1 .sdt b {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color:blue;
+    font-size: 9px;
+}
+.row-1 .gt{
+    text-decoration: none;
+}
+/* icon */
+
+.icon-down{
+    position: absolute;
+    top:17px;
+    left: 115px;
+
+}
+.icon-up{
+    position: absolute;
+    top:17px;
+    left: 115px;
+    display: none;
+}
+
+.icon-down-huongdan{
+    position: absolute;
+    top:70px;
+    left: 115px;
+
+}
+.icon-up-huongdan{
+    position: absolute;
+    top:70px;
+    left: 115px;
+    display: none;
+}
+.circle-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.3s;
+  }
+
+  .circle-btn:hover {
+    background-color: rgba(150, 150, 150, 0.8);
+  }
+
+  .left-btn {
+    left: 10px;
+  }
+
+  .right-btn {
+    right: 10px;
+  }
+ 
+
+ 
+
+/* end icon */

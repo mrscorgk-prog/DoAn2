@@ -1,0 +1,32 @@
+GITHUB CƠ BẢN CHO ĐỒ ÁN THIẾT KẾ WEB
+
+1. Vì sao sinh viên phải dùng GitHub?
+Trong đồ án Thiết kế Web cơ bản, GitHub không chỉ là nơi cất mã nguồn. Mục đích quan trọng hơn là giúp sinh viên duy trì công việc theo từng phiên bản và giúp giảng viên theo dõi tiến độ một cách rõ ràng. Vì vậy, trong video này chúng ta chỉ học những thao tác cần thiết nhất: tạo repository, đưa dự án lên GitHub, commit sau mỗi phần việc, push để đồng bộ, clone hoặc pull khi làm trên máy khác, và cuối cùng gửi đúng đường link repository cho giảng viên.
+
+2. Chuẩn bị trước khi bắt đầu
+Trước hết, sinh viên cần một tài khoản GitHub và cài GitHub Desktop. Với người mới, GitHub Desktop dễ dùng hơn dòng lệnh vì các thao tác chính đều có nút bấm. Hãy chuẩn bị thư mục đồ án có tên dễ nhận biết, không dùng tên kiểu New Folder hoặc Web Final Final. Trong thư mục nên có cấu trúc rõ ràng như index.html, thư mục css, js, images và một file README mô tả đề tài. Tuyệt đối không đưa mật khẩu, khóa API hoặc thông tin riêng tư vào repository công khai.
+
+3. Tạo repository từ thư mục đồ án
+Bước đầu tiên là biến thư mục đồ án thành một repository. Trong GitHub Desktop, chọn File, New repository. Đặt tên ngắn gọn, ví dụ da2-web-ban-hang-nguyen-van-a, rồi chọn Local path. Nếu thư mục của em đã là một Git repository, dùng File, Add local repository. Khi repository đã xuất hiện trong GitHub Desktop, bấm Publish repository. Đây là thao tác đưa repository từ máy tính của em lên tài khoản GitHub để giảng viên có thể truy cập khi em gửi link.
+
+4. Commit: ghi lại một mốc công việc
+Mỗi khi hoàn thành một phần việc có ý nghĩa, em nên tạo một commit. Ví dụ, hoàn thiện giao diện trang chủ, sửa menu responsive hoặc thêm chức năng tìm kiếm. Sau khi sửa mã nguồn trong VS Code, quay lại GitHub Desktop. Cột Changes sẽ cho biết file nào vừa thay đổi. Ở ô Summary, đừng ghi những nội dung mơ hồ như update, fix hay abc. Hãy ghi rõ việc đã làm. Sau đó bấm Commit to main. Lưu ý, commit mới chỉ ghi lại phiên bản trên máy tính của em.
+
+5. Push: đưa commit lên GitHub
+Sau commit, thao tác tiếp theo là push. Hãy bấm Push origin. Push có nghĩa là gửi các commit đã lưu trên máy lên repository online. Đây là bước rất hay bị sinh viên quên. Nếu em chỉ commit mà không push, giảng viên mở GitHub sẽ không thấy phần việc mới. Sau khi push xong, có thể chọn Repository, View on GitHub để mở repository trên trình duyệt. Hãy kiểm tra file, thời gian commit và nội dung commit để chắc chắn phiên bản mới đã được đồng bộ.
+
+6. Quy trình làm việc hằng tuần nên dùng
+Để tránh mất code hoặc xung đột phiên bản, hãy hình thành một quy trình cố định. Trước khi bắt đầu, fetch hoặc pull để lấy phiên bản mới nhất nếu em làm trên nhiều máy hoặc làm theo nhóm. Sau đó mới code và kiểm tra website. Khi hoàn thành một phần việc, tạo commit với nội dung rõ ràng. Cuối mỗi buổi làm việc, push origin. Cuối cùng, mở repository trên GitHub và kiểm tra lịch sử commit. Chỉ cần duy trì thói quen này, giảng viên có thể nhìn được tiến độ thật của em qua từng tuần.
+
+7. Clone khi chuyển sang máy khác
+Khi chuyển sang máy khác, không nên chép qua USB rồi tạo thêm hàng loạt bản web mới, web final hai, web final ba. Hãy clone repository. Trên GitHub, mở repository, bấm Code và chọn Open with GitHub Desktop. Chọn vị trí lưu trên máy mới rồi bấm Clone. Toàn bộ mã nguồn và lịch sử phiên bản sẽ được tải xuống. Sau đó em tiếp tục sửa, commit và push như bình thường. Cách này giúp chỉ có một nguồn mã chính và giảm nguy cơ nộp nhầm phiên bản.
+
+8. Cách đặt commit để GVHD dễ kiểm tra
+Lịch sử commit là bằng chứng quá trình làm đồ án. Vì vậy, cách đặt commit rất quan trọng. Hãy dùng câu ngắn nhưng nói được em đã làm gì, chẳng hạn Hoàn thiện Chương một và README, Thiết kế trang chủ và menu responsive, hoặc Thêm chức năng tìm kiếm sản phẩm. Tránh các commit chỉ có chữ update, fix, ok, abc hay final. Giảng viên không cần số lượng commit thật nhiều, nhưng cần nhìn thấy tiến độ hợp lý, liên tục và gắn với công việc thực tế của đồ án.
+
+9. Repository đạt yêu cầu khi nộp đồ án
+Trước khi nộp, repository cần đạt năm điểm cơ bản. Thứ nhất, tên repo rõ ràng và đường link mở được. Thứ hai, phải có mã nguồn thực tế, không chỉ đưa một file zip lên rồi coi như xong. Thứ ba, README nên ghi tên đề tài, sinh viên thực hiện, công nghệ sử dụng, cách chạy và đường link website demo nếu có. Thứ tư, lịch sử commit phải thể hiện quá trình làm việc. Thứ năm, nếu website đã triển khai trên Internet, hãy đặt URL demo ở vị trí dễ thấy trong README.
+
+10. Checklist 60 giây trước khi gửi GVHD
+Trước khi gửi cho giảng viên, hãy dành một phút kiểm tra. Mở repository bằng trình duyệt và thử đường link ở chế độ ẩn danh để chắc chắn quyền truy cập phù hợp. Kiểm tra commit mới nhất đã xuất hiện online. Mở README và thử link demo. Xem lại xem có vô tình đưa mật khẩu hoặc dữ liệu riêng tư lên repository hay không. Cuối cùng, gửi một dòng thông tin đầy đủ gồm họ tên, mã sinh viên, tên đề tài, link GitHub và link website demo. Nếu làm đúng mười bước trong video này, em đã đáp ứng được phần GitHub cơ bản của đồ án.
+

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán</title>
+    <link  rel="stylesheet" type="text/css" href="ThanhToan.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anuphan:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap"
+      rel="stylesheet"
+    /> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <div class="thanhtoan">
+            <div class="thanhtoan-chitiet">
+                <div class="thanhtoan-chitiet-trai">
+                    <p>
+                      <a href="http://127.0.0.1:5500/TrangChu/TrangChu.html">
+                        <img src="img/Logoo.png">
+                      </a>
+                     
+                    </p>
+                    <p>Thông tin giao hàng</p>
+                <div class="thanhtoan-chitiet-dangnhap">
+                  <p>Bạn đã có tài khoản? <a href="http://127.0.0.1:5500/DangNhap/DangNhap.html">Đăng nhập</a></p>
+                </div>
+                <div class="thanhtoan-chitiet-input">
+                  <div class="thanhtoan-chitiet-input-a">
+                    <label> Họ và tên </label>
+                    <input type="text" id="nhaphoten" onblur="ktraHoTen()">
+                  </div>
+                  <div class="thanhtoan-chitiet-input-b">
+                    <label> Email</label>
+                    <input type="text" id="nhapemail" onblur="ktraEmail()">
+                  </div>
+                  <div class="thanhtoan-chitiet-input-c">
+                    <label>Số điện thoại</label>
+                    <input type="text" id="nhapsdt">
+                  </div>
+                  <div class="thanhtoan-chitiet-input-d">
+                    <input type="radio" id="thanhtoan" > <p>Thanh toán khi nhận hàng</p>
+                    
+                  </div>
+                  <div class="thanhtoan-chitiet-input-a">
+                    <label>Địa chỉ</label>
+                    <input type="text" id="nhapdiachi" >
+                  </div>
+                  <div class="thanhtoan-chitiet-input-f">
+                    <label>Tỉnh / thành</label>
+                    <input type="text" id="nhaptinh" >
+                  </div>
+                  <div class="thanhtoan-chitiet-input-g">
+                    <label>Quận / huyện</label>
+                    <input type="text" id="nhaphuyen" >
+                  </div>
+                  <div class="thanhtoan-chitiet-input-h">
+                    <label>Phường/xã</label>
+                    <input type="text" id="nhapxa" >
+                  </div>
+                  <div class="thanhtoan-chitiet-input-ne">
+                    <p style="font-size: 9px;"><a href="http://127.0.0.1:5500/GioHang/GioHang.html"> Giỏ hàng</a></p>
+                  </div>
+                    <div class="thanhtoan-chitiet-input-ne">
+                    
+                      <button id="dathang" onclick="dathang()">Đặt hàng</button>
+                    </div>
+                  </div>
+                </div>
+
+                
+                </div>
+                <div class="thanhtoan-chitiet-phai">
+                  <table>
+                    <tr class="rieng">
+                   
+                      <td>
+                       
+                          <img src="https://product.hstatic.net/1000197303/product/pro_nau_01_1_e3664d0e689448cc83d1b676d9a78e34_medium.jpg"> 
+                       
+                        
+                      
+                      </td>
+                      <td><p style="font-size: 9px;">
+                        Áo blazer form cơ bản tay dài 2 túi<br>
+                        M
+                      </p>  </td>
+                      <td style="text-align: right;font-size: 9px;"> 416,500<ins>đ</ins></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"> <input type="text" id="mgg" placeholder="Mã giảm giá" ></td>
+                      <td style="text-align: right;"> <button id="ma">Sử dụng</button></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" style="font-size: 9px;">Tạm tính <br> Phí vận chuyển</td>
+                      <td style="text-align: right;font-size: 9px;"> 416,500<ins>đ</ins> <br> ___</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">Tổng cộng</td>
+                      <td>
+                        <p style="text-align: right;"><small style="font-size: 7px;">VND</small>416,500<ins>đ</ins></p>
+                      </td>
+                    </tr>
+                  </table>
+                  
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+   <script src="ThanhToan.js"></script>
+</body>
+</html>

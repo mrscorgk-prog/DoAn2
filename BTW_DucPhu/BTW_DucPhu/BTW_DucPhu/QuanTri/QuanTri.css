@@ -1,0 +1,255 @@
+.body{
+    background-color: aqua;
+}
+.header {
+    width: 992px;
+    height: 50px;
+    background-color: #D37171;
+    position: fixed; 
+    top: 0;
+    left: 275px; 
+    z-index: 1000; 
+}
+
+.header .user {
+    
+    margin-top: 12px;
+    margin-left: 765px;
+}
+
+.user i {
+    font-size: 20px;
+}
+
+/* ---------------------------- */
+.left {
+    width: 275px;
+    background-color: #D37171;
+    position: fixed;
+    top: 0px; 
+    left: 0;
+    height: 100%;
+    padding-top: 2px;
+    z-index: 999; 
+}
+ .left .left-head img {
+    width: 275px;
+    height: 48px;
+}
+
+.left-nd {
+    padding-top: 0px;
+  
+}
+.left-nd button {
+    background-color: #D37171;
+    font-family: 'EB Garamond', serif;
+    border: #D37171;
+    font-size: 16px;
+    padding: 12px;
+}
+
+/* ------------------- */
+.home {
+    margin-left: 287px; 
+    margin-top: 50px; 
+    width: calc(100% - 287px); 
+}
+
+.home .home-mota img {
+    width: 968px;
+    height: 567px;
+    padding-top: 0px;
+}
+
+/* ---------sản phẩm----------- */
+.sanpham {
+    margin-left: 287px; 
+    margin-top: 50px; 
+    width: calc(100% - 287px); 
+}
+
+.sanpham table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.sanpham table tr td {
+    border: solid 1px black;
+    text-align: center;
+}
+.sanpham .table thead th{ 
+    background-color: #D37171;
+}
+tr td img {
+    width: 100px;
+    height: 120px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+form{ 
+    margin-left: 285px;
+    margin-top: 66px;
+}
+.btn{
+    background-color: #D37171;
+    border-radius: 12px;
+    border:#D37171;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+/*------donhang----------*/
+/* .donhangchitiet{
+    margin-left: 287px;
+    margin-top: 12px;
+    width: calc(100% - 287px); 
+} */
+.donhangchitiet table{
+    border-collapse: collapse;
+    border: 1px black;
+    width: calc(100% - 287px); 
+  
+}
+.donhangchitiet table td{
+    border: solid 1px black;
+}
+.btn-chon{
+    margin-top:12px
+}
+.btn2{
+    margin-top: 12px;
+    background-color: #D37171;
+    border: 1px #D37171 ;
+    border-radius: 8px;
+}
+
+.main-don-hang table, tr, th, td{
+    border: 1px solid #333;
+    border-collapse:collapse ;
+    text-align: center;
+}
+.main-don-hang table{
+    position: absolute;
+    top: 150px;
+    left: 300px;
+    width: 950px;
+}
+.main-don-hang table tr th{
+    background-color: #D37171;
+}
+.body-don-hang tr{
+    width: 950px;
+}
+
+/* --------------------thống kê----------------------------- */
+.thongke{
+    position: relative;
+    width: 900px;
+    height: 500px;
+    left: 315px;
+}
+.thongke-main{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-evenly;
+}
+.top{
+    background-color: #D37171;
+    border-radius: 6px;
+    width: 250px;
+    height: 40px;
+    font-size: 16px;
+}
+.top-1 {
+    border: 1px solid #D37171;
+    border-radius: 6px;
+    margin-top: 20px;
+    width: 250px;
+    height: auto;
+    display: block;
+    background-color: #fff; /* Nếu cần */
+}
+
+.top p{
+    padding: 10px;
+    text-align: center;
+}
+ .top .top-1{
+    border: 1px solid #D37171;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+ .top-1-below{
+    border-bottom: 1px solid #D37171;
+}
+.top-2-below{
+    display: flex; 
+    justify-content: space-evenly;  
+    width: 250px;
+    height: 142px;
+    
+}
+.top-2-below p{
+    font-size: 12px;
+}
+
+
+.thongke .inner_chart {
+    width: 1100px;
+    height: 265px;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    left: -100px;
+    margin-top: 15px;
+}
+
+.thongke .inner_chart #inner_chart_donban{
+    width: 350px;
+}
+.thongke .inner_chart #inner_chart_doanhthu{
+    width: 350px;
+}
+/*------*/
+.sanpham-table .top-1{
+    height: 188px;
+    width:  250px;
+}
+ .chart{
+    display: flex;
+    position: absolute;
+    width: 450px;
+    height: 365px;
+}
+
+/*------nhà cung cấp-----------------*/
+.nhacungcap{
+    margin-left: 300px;
+    margin-top: 61px;
+}
+.nhacungcap table{
+    width:900px; 
+    margin-top: 12px;
+}
+.nhacungcap table, tr, th, td {
+    border: solid 1px #333;
+    border-collapse: collapse;
+}
+.nhacungcap th{
+    background-color:#D37171 ;
+    font-weight: bold;
+    font-size: 15px;
+} 
+/* ------------------------------qlnhanvien----------------------- */
+
+.qlnhanvien table{
+    margin-left: 300px;
+    width: calc(100% - 320px); 
+    border: solid 1px #333;
+    border-collapse: collapse;
+    margin-top: 60px;
+}
+.qlnhanvien table th{
+    background-color: #D37171;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sản phẩm | Sebastian Sportwear</title>
+<meta name="description" content="Danh sách trang phục thể hình và phụ kiện tập luyện.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600;700&display=swap&subset=vietnamese" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body data-page="products">
+<div id="site-header"></div>
+<section class="page-head"><div class="container"><div class="crumb"><a href="index.html">Trang chủ</a> / Sản phẩm</div><h1>Sản phẩm</h1></div></section>
+<main class="section"><div class="container"><div class="row g-4">
+  <aside class="col-lg-3"><div class="filter-box">
+    <h6 class="mt-0">Nhóm sản phẩm</h6>
+    <div id="fGroup"></div>
+    <h6>Mức giá</h6>
+    <div id="fPrice"></div>
+  </div></aside>
+  <div class="col-lg-9">
+    <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
+      <div id="resultInfo" class="text-muted-sw"></div>
+      <select id="sort" class="form-select w-auto" aria-label="Sắp xếp">
+        <option value="new">Mới nhất</option><option value="asc">Giá tăng dần</option><option value="desc">Giá giảm dần</option>
+      </select>
+    </div>
+    <div class="row g-3 g-md-4" id="grid"></div>
+  </div>
+</div></div></main>
+<div id="site-footer"></div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/layout.js"></script>
+<script>
+
+const groups = [['', 'Tất cả'], ['nam', 'Đồ nam'], ['nu', 'Đồ nữ'], ['phukien', 'Phụ kiện tập']];
+const prices = [['', 'Tất cả'], ['0-300', 'Dưới 300.000₫'], ['300-500', '300.000₫ - 500.000₫'], ['500-99999', 'Trên 500.000₫']];
+const radio = (name, arr, cur) => arr.map((a) => `<div class="form-check"><input class="form-check-input" type="radio" name="${name}" id="${name}${a[0]}" value="${a[0]}" ${a[0] === cur ? 'checked' : ''}><label class="form-check-label" for="${name}${a[0]}">${a[1]}</label></div>`).join('');
+$('#fGroup').html(radio('group', groups, qs('group') || ''));
+$('#fPrice').html(radio('price', prices, ''));
+function render() {
+  const g = $('input[name=group]:checked').val(), pr = $('input[name=price]:checked').val(), q = (qs('q') || '').toLowerCase().trim();
+  let list = PRODUCTS.filter((p) => (!g || p.group === g) && (!q || (p.name + ' ' + p.cat).toLowerCase().includes(q)));
+  if (pr) { const [a, b] = pr.split('-').map(Number); list = list.filter((p) => p.price >= a * 1000 && p.price < b * 1000); }
+  const s = $('#sort').val();
+  if (s === 'asc') list.sort((x, y) => x.price - y.price); else if (s === 'desc') list.sort((x, y) => y.price - x.price); else list.sort((x, y) => y.id - x.id);
+  $('#resultInfo').text(`${list.length} sản phẩm` + (q ? ` cho “${qs('q')}”` : ''));
+  $('#grid').html(list.length ? list.map(productCard).join('') : '<div class="col-12"><div class="empty-box">Không có sản phẩm phù hợp. Thử bỏ bớt bộ lọc hoặc đổi từ khóa tìm kiếm.</div></div>');
+}
+$('.filter-box, #sort').on('change', render); render();
+
+</script>
+</body>
+</html>

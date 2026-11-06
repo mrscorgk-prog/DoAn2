@@ -1,0 +1,324 @@
+.container {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo img {
+    height: 25px;
+    width: auto;
+}
+
+.inner-wrap {
+    width: 900px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    position: fixed;
+    background-color: white;
+}
+
+.menu ul{
+    list-style-type: none;
+    display: flex;   
+}
+.menu ul li a {
+    text-decoration: none;
+    font-family: 'Jura', sans-serif;
+    color:black;
+    padding:8px;
+    font-size: 12px;
+}
+.menu ul li {
+    position: relative;
+}
+
+.menu ul li:hover .chitiet {
+    display: block; /* Hiển thị menu con khi di chuột vào mục cha */
+}
+.chitiet {
+    position: absolute;
+    background-color: white;
+    width: 300px;
+    height: auto;
+    left: 0;
+    top: 100%;
+    padding: 12px;
+    display: none;
+    z-index: 10;
+}
+.chitiet ul {
+    display: flex;
+    flex-direction: column;
+}
+.chitiet ul li {
+    position: relative;
+    padding: 6px 0;
+}
+.chitiet ul li:hover a {
+    color: #DB8A8A;
+}
+.chitiet ul li:hover {
+    background: none;
+}
+
+.thucthi ul{
+    list-style-type: none;
+    display: flex;
+}
+.thucthi ul li a{
+    color:black;
+    padding: 6px;
+}
+/* ----------------------section------------------- */
+.head{
+    padding-top:20px ;
+}
+.sanpham {
+    padding-top:350px; 
+    max-width: 900px;
+ 
+    
+}
+.chitiet {
+    position: absolute;
+    background-color: white;
+    width: 300px;
+    height: auto;
+    left: 0;
+    top: 100%;
+    padding: 12px;
+    display: none;
+    z-index: 10;
+    
+}
+.chitiet ul {
+    display: flex;
+    flex-direction: column;
+}
+.chitiet ul li {
+    position: relative;
+    padding: 6px 0;
+}
+.chitiet ul li:hover a {
+    color: lightblue;
+}
+.chitiet ul li:hover {
+    background: none;
+}
+
+
+.header-main .menu ul li:hover .chitiet {
+    display: block;
+}
+
+/* ----------------------section------------------- */
+.pic2 img{
+    width:900px;
+    height :300px;
+    left:190px;
+    position: absolute;
+
+}
+.sticker {
+    position: fixed;
+    bottom: 0; /* Đặt vị trí ở phía dưới */
+    right: 0; /* Đặt vị trí ở phía bên phải */
+    width: 80px; /* Thiết lập chiều rộng của div */
+    height: 100px; /* Thiết lập chiều cao của div */
+   padding: 10px;
+   z-index: 2;
+
+}
+.sticker2{
+    position: fixed;
+    bottom:0;
+    width: 80px; /* Thiết lập chiều rộng của div */
+    height: 100px;
+    padding: 10px;
+  
+}
+/* --------------------section--------------------- */
+.cart{
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cart-main {
+    display: flex;
+}
+.head p{
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+    font-size:25px
+}
+img{
+    width: 120px;
+}
+th{
+    font-family:  "Plus Jakarta Sans", sans-serif;
+    font-size: 12px;
+    color:darkgrey
+}
+.cart-content-left table {
+    width: 580px;
+    border-collapse: collapse; 
+    font-size: 10px;
+    font-family:  "Plus Jakarta Sans", sans-serif;
+}
+.cart-content-left table td {
+    padding: 12px; 
+    text-align: center;
+}
+.cart-content-left table th {
+    padding: 20px; 
+}
+table tr:first-child{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    border-bottom: 1px solid grey;
+}
+.cart-content-left{
+    flex:2;
+}
+.nd{
+    font-family:  "Plus Jakarta Sans", sans-serif;
+    font-size: 11px;
+}
+.cart-content-left button{
+    border-radius: 12px;
+    border:1px solid grey;
+    background-color: white;
+}
+#color {
+    font-size: 9px; /* Cỡ chữ */
+    padding: 6px ; /* Padding (8px trên/dưới, 16px trái/phải) */
+}
+#num{
+    width: 40px;
+    border:0;
+
+}
+#tru{
+    border:0;
+}
+#cong{
+    background-color:#D37171;
+    border:1px solid #D37171;
+}
+/* --------------------------- */
+.cart-content-right tr:first-child{
+    font-family: 'EB Garamond', serif;
+}
+.cart-content-right table {
+    width: 300px;
+    background-color: #F8F8F8;
+    height: 100px;
+}
+.cart-content-right table td {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 10px;
+    padding: 12px; /* Khoảng cách nội dung với border */
+}
+.cart-content-right table th{
+    font-family: 'EB Garamond', serif;
+    font-size: 16px;
+    border-bottom: 1px solid grey;
+    padding-bottom: 20px;
+}
+.cart-content-right-button button{
+    margin-top: 15px; /* Khoảng cách từ phần trên */
+    width: 300px;
+    border:0;
+    padding:10px;
+    background-color: #D37171;
+
+}
+
+#thanhtoan{
+    color:white;
+    font-size: 11px;
+    font-weight: bold;
+}
+/* ----------------------section------------------- */
+
+.img-footer img{
+    height: 35px;
+    width: 100px;
+    margin-left: 185px;
+    padding-top: 25px;
+}
+/* ----------------------section------------------- */
+.footer{
+    max-width: 1200px;
+}
+.footer-1 .row {
+    display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử con theo chiều ngang */
+    flex-wrap: wrap; /* Cho phép các phần tử con xuống dòng nếu không đủ không gian */
+    justify-content: space-between; /* Tạo khoảng cách đều giữa các phần tử con */
+    align-items: flex-start; /* Căn chỉnh các phần tử theo trục dọc */
+    padding: 0 20px; /* Khoảng cách giữa các phần tử con và hai bên lề */
+}
+
+.footer-1 .row .row-1 {
+    flex: 1; /* Đảm bảo các phần tử con chia đều không gian */
+    margin: 4px; /* Thêm khoảng cách xung quanh các phần tử con */
+}
+
+.footer-1 .row .row-1 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-1 .row .row-1 .row-1-2 ul {
+    list-style-type: none;
+    padding: 9px;
+    display: flex;
+    align-items: center; /* Căn giữa theo trục dọc */
+    gap: 16px;
+}
+
+.row-1-2 ul li a img {
+    width: 110px;
+}
+.footer-1 a:hover { 
+    color: indianred;
+    text-decoration: none; 
+   
+     
+}
+
+
+.iki ul li {
+    list-style-type: none;
+}
+
+.iki ul li a {
+    font-family: 'EB Garamond', serif;
+}
+
+.iki ul li p {
+    font-family: 'EB Garamond', serif;
+    font-size: 9px;
+    margin-left: 20px;
+}
+.row .row-1 ul li{
+    font-family: 'EB Garamond', serif;
+    font-size: 12px;
+
+}
+.row{
+    margin-left: 150px;
+}
+.row-1 .sdt b {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color:blue;
+    font-size: 9px;
+
+}
+.row-1 .gt {
+    text-decoration: none;
+}
+.cart-content-right-button a{
+    text-decoration: none;
+    color: azure;
+}

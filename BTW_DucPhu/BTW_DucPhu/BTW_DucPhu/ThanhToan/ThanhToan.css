@@ -1,0 +1,141 @@
+
+.thanhtoan{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    display:flex;
+}
+.thanhtoan-chitiet-trai{
+    width: 60%;
+    padding-right: 20px;
+    margin-left: 300px;
+}
+.thanhtoan-chitiet-trai img{
+    width: 90px;
+    height: 35px;
+}
+.thanhtoan-chitiet-trai p:nth-child(2){
+    font-size: 12px;
+}
+.thanhtoan-chitiet-dangnhap p{
+    font-size: 9px;
+}
+.thanhtoan-chitiet-trai label{
+    font-size: 10px;
+    margin-bottom:8px;
+    display:block;
+}
+.thanhtoan-chitiet-input-a{
+    margin:8px 0;
+} 
+.thanhtoan-chitiet-input-a input{
+  right: 8px;
+   width: 330px;
+   height: 20px;
+}
+.thanhtoan-chitiet-input-b{
+    margin-top: 20px;
+}
+.thanhtoan-chitiet-input-b input{
+    width: 190px;
+    height: 20px;
+}
+.thanhtoan-chitiet-input-c {
+    margin-left: 206px;
+    margin-top: -46px;
+}
+.thanhtoan-chitiet-input-c input{
+    width: 120px;
+    height: 20px;
+}
+.thanhtoan-chitiet-input-d{
+    margin-top: 20px;
+}
+.thanhtoan-chitiet-input-d p{
+    margin-top: -20px;
+    margin-left: 21px;
+}
+.thanhtoan-chitiet-input-f{
+    margin-top: 20px;
+}
+.thanhtoan-chitiet-input-f input{
+    width: 90px;
+    height: 20px;
+}
+.thanhtoan-chitiet-input-g {
+    margin-top: -46px;
+    margin-left: 117px;
+}
+
+
+.thanhtoan-chitiet-input-g input{
+    width: 90px;
+    height: 20px;
+}
+.thanhtoan-chitiet-input-h {
+    margin-top: -46px;
+    margin-left: 235px;
+}
+.thanhtoan-chitiet-input-h input{
+    width: 90px;
+    height: 20px;
+}
+
+.thanhtoan-chitiet-input-ne button{
+    background-color:#D37171 ;
+    border: 1px solid #D37171;
+    width: 200px;
+    height: 30px;
+    margin-left: 90px;
+    margin-top:-10px;
+
+}
+#dathang{
+    color:white;
+    font-size: 12px;
+}
+/* --------------------------------------------- */
+.thanhtoan-chitiet-phai{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 12px;
+    padding-top:35px;
+    padding-right:20px;
+    padding-left:162px;
+   
+}
+.thanhtoan-chitiet-phai img{
+   width: 40px;
+   height: 50px;
+
+}
+
+.thanhtoan-chitiet-phai input{
+    width: 241px;
+    height: 25px;
+    border: 1px solid #A3A3A3;
+    border-radius: 4px;
+}
+.thanhtoan-chitiet-phai button{
+    height: 27px;
+    width: 76px;
+    background-color: #A3A3A3;
+    border: 1px solid #A3A3A3;
+    border-radius: 4px;
+    
+}
+#ma{
+    font-size: 11px;
+    color:white;
+}
+.thanhtoan-chitiet-phai table{
+    padding:6px;
+    width: 350px;
+    height: 300px;
+
+}
+.rieng td{
+    border-top:0;
+}
+table td{
+    border-top: 1px solid #A3A3A3;
+   
+   
+}

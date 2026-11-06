@@ -1,0 +1,282 @@
+header {
+    font-family: 'Comfortaa', sans-serif;
+
+}
+.header-top {
+    font-family: 'Anuphan', sans-serif;
+    background-color:black;
+    color: azure;
+    text-align: center;
+    padding: 4px;
+    font-size: 9px;
+   
+
+}
+
+.container {
+
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.inner-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 0;
+}
+.header-main .logo img {
+    height: 25px;
+    width: auto;
+}
+
+.menu a {
+    text-decoration: none;
+}
+.header-main .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    font-family: 'Jura', sans-serif;
+}
+.header-main .menu ul li a {
+    color: black;
+    font-size: 12px;
+}
+.header-main .menu ul li {
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+}
+.thucthi ul {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+}
+.thucthi ul li {
+    margin-left: 6px;
+    color: black;
+}
+.section-1 img {
+    max-width: 900px;
+    margin-left: 182px;
+    margin-right: auto;
+}
+ul li a {
+    color: black;
+}
+/* ----------------------section------------------- */
+
+.sanpham {
+    padding-top:350px; 
+    max-width: 900px;
+ 
+    
+}
+.chitiet {
+    position: absolute;
+    background-color: white;
+    width: 300px;
+    height: auto;
+    left: 0;
+    top: 100%;
+    padding: 12px;
+    display: none;
+    z-index: 10;
+    
+}
+.chitiet ul {
+    display: flex;
+    flex-direction: column;
+}
+.chitiet ul li {
+    position: relative;
+    padding: 6px 0;
+}
+.chitiet ul li:hover a {
+    color: lightblue;
+}
+.chitiet ul li:hover {
+    background: none;
+}
+
+
+.header-main .menu ul li:hover .chitiet {
+    display: block;
+}
+
+/* ----------------------section------------------- */
+.pic2 img{
+    width:900px;
+    height :300px;
+    left:190px;
+    position: absolute;
+
+}
+.sticker {
+    position: fixed;
+    bottom: 0; /* Đặt vị trí ở phía dưới */
+    right: 0; /* Đặt vị trí ở phía bên phải */
+    width: 80px; /* Thiết lập chiều rộng của div */
+    height: 100px; /* Thiết lập chiều cao của div */
+   padding: 10px;
+   z-index: 2;
+
+}
+.sticker2{
+    position: fixed;
+    bottom:0;
+    width: 80px; /* Thiết lập chiều rộng của div */
+    height: 100px;
+    padding: 10px;
+  
+}
+/* -----------------------frm-login----------------------- */
+body{
+   
+    background-image: url('https://scontent.fhan4-5.fna.fbcdn.net/v/t39.30808-6/476076557_935557802033520_3259077461249197112_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=86c6b0&_nc_ohc=QMNZw0hB9BsQ7kNvwFaNYi9&_nc_oc=AdmZ3MVSz48Ue4eReY-pJoUEAXITW492Uk4_LeXc1at5zKj1waTRahZvyrUvQOPMD0g&_nc_zt=23&_nc_ht=scontent.fhan4-5.fna&_nc_gid=lzMBfEV7QpM380WEhBPpYw&oh=00_AfMrfpTW_U1Tauw-lmVSoEIlTM133oOslt1815t0CNVxLg&oe=68520289') ;
+    background-size: 100% 400px; 
+    background-repeat: no-repeat;
+    background-position: center 90px; 
+}
+.login{
+    min-height:70vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+
+
+}
+.frm-login{
+    max-width: 300px;
+    flex-grow: 1;
+    background: white;
+    padding-top: 30px;
+    height:200px;
+    left:10px;
+    padding:20px
+
+}
+.heading{
+    font-size: 14px;
+    text-align: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-bottom: 25px;
+}
+.frm-gr{
+    border-bottom: 1px solid black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+}.frm-input{
+    background: transparent; 
+    border:0;
+    outline:0; 
+    box-sizing: border-box; 
+    margin-right: 0; 
+    flex-grow: 1;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 9px;
+    width: 250px;
+
+}
+
+.frm-submit{
+    border: 1px solid  indianred;
+    background-color: indianred;
+    border-radius: 16px;
+    width: 140px;
+    height: 30px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    color:white;
+    margin-left:80px;
+}
+.frm-user::placeholder {
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+  
+    font-size: 10px;
+
+    color: #999; 
+}
+.img-footer img{
+    height: 35px;
+    width: 100px;
+    margin-left: 185px;
+    padding-top: 25px;
+}
+/* ----------------------section------------------- */
+.footer{
+    max-width: 1200px;
+
+}
+.footer-1 .row {
+    display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử con theo chiều ngang */
+    flex-wrap: wrap; /* Cho phép các phần tử con xuống dòng nếu không đủ không gian */
+    justify-content: space-between; /* Tạo khoảng cách đều giữa các phần tử con */
+    align-items: flex-start; /* Căn chỉnh các phần tử theo trục dọc */
+    padding: 0 20px; /* Khoảng cách giữa các phần tử con và hai bên lề */
+}
+
+.footer-1 .row .row-1 {
+    flex: 1; /* Đảm bảo các phần tử con chia đều không gian */
+    margin: 4px; /* Thêm khoảng cách xung quanh các phần tử con */
+}
+
+.footer-1 .row .row-1 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-1 .row .row-1 .row-1-2 ul {
+    list-style-type: none;
+    padding: 9px;
+    display: flex;
+    align-items: center; /* Căn giữa theo trục dọc */
+    gap: 16px;
+}
+
+.row-1-2 ul li a img {
+    width: 110px;
+}
+.footer-1 a:hover { 
+    color: indianred;
+    text-decoration: none; 
+   
+     
+}
+
+
+.iki ul li {
+    list-style-type: none;
+}
+
+.iki ul li a {
+    font-family: 'EB Garamond', serif;
+}
+
+.iki ul li p {
+    font-family: 'EB Garamond', serif;
+    font-size: 9px;
+    margin-left: 20px;
+}
+.row .row-1 ul li{
+    font-family: 'EB Garamond', serif;
+    font-size: 12px;
+
+}
+.row{
+    margin-left: 150px;
+}
+.row-1 .sdt b {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color:blue;
+    font-size: 9px;
+
+}
+

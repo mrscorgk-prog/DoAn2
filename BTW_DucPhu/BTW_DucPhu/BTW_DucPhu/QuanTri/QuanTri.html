@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN</title>
+    <link  rel="stylesheet" type="text/css" href="QuanTri.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anuphan:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap"
+      rel="stylesheet"
+    />  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<body>
+    <header>
+        <div class="header">
+            <div class="user">
+                <i class="fa-regular fa-user"></i> Lê Đức Phú
+            </div>
+
+        </div>
+    </header>
+    <section>
+        <div class="left">
+            <div class="left-head">
+                <img src="https://theme.hstatic.net/1000197303/1001046599/14/logo.png?v=10081">
+            </div>
+            <div class="left-nd">
+                
+                    <button onclick="document.getElementById('home').style.display='block';document.getElementById('sanphamm').style.display='none'; document.getElementById('donhang').style.display='none';document.getElementById('thongke').style.display='none';document.getElementById('nhacungcap').style.display='none';document.getElementById('qlnhanvien').style.display='none';"><i class="fa-solid fa-house"></i> HOME</button>
+                    <hr>
+                    <button onclick="document.getElementById('sanphamm').style.display='block';document.getElementById('home').style.display='none';document.getElementById('donhang').style.display='none';document.getElementById('thongke').style.display='none';document.getElementById('nhacungcap').style.display='none';document.getElementById('qlnhanvien').style.display='none';"> <i class="fa-brands fa-product-hunt"></i>QUẢN LÝ SẢN PHẨM</button>
+                    <hr>
+                    <button onclick="document.getElementById('donhang').style.display='block'; document.getElementById('home').style.display='none'; document.getElementById('sanphamm').style.display='none';document.getElementById('thongke').style.display='none';document.getElementById('nhacungcap').style.display='none';document.getElementById('qlnhanvien').style.display='none';"><i class="fa-solid fa-bag-shopping"></i>QUẢN LÝ ĐƠN HÀNG</button>
+                    <hr>
+                    <button onclick="document.getElementById('thongke').style.display='block';document.getElementById('home').style.display='none';document.getElementById('sanphamm').style.display='none';document.getElementById('donhang').style.display='none';document.getElementById('nhacungcap').style.display='none';document.getElementById('qlnhanvien').style.display='none';"><i class="fa-solid fa-chart-simple"></i> THỐNG KÊ</button>
+                    <hr>
+                    <button onclick="document.getElementById('nhacungcap').style.display='block';document.getElementById('home').style.display='none';document.getElementById('sanphamm').style.display='none';document.getElementById('donhang').style.display='none';document.getElementById('thongke').style.display='none';document.getElementById('qlnhanvien').style.display='none';"><i class="fa-solid fa-truck-field"></i>QUẢN LÝ NHÀ CUNG CẤP</button>
+                    <hr>
+                    <button onclick="document.getElementById('qlnhanvien').style.display='block';document.getElementById('nhacungcap').style.display='none';document.getElementById('home').style.display='none';document.getElementById('sanphamm').style.display='none';document.getElementById('donhang').style.display='none';document.getElementById('thongke').style.display='none';"><i class="fa-solid fa-users"></i></i>QUẢN LÝ NHÂN VIÊN</button>
+                    <hr>
+                    <button><i class="fa-solid fa-right-to-bracket"></i> <a href="http://127.0.0.1:5500/DangNhap/DangNhap.html">ĐĂNG XUẤT</a></button>
+                    <hr>
+                    
+                
+            </div>
+        </div>
+    </section>
+    <!--------------------------------------------- Home ----------------------------------------------->
+    <section>
+        <div class="home">
+            <div class="home-mota" id="home" style="display: block;">
+                <img src="https://theme.hstatic.net/1000197303/1001046599/14/blog_banner_1.jpg?v=8942" id="homeImage">
+            </div>
+        </div>
+    </section>
+
+<!------------------------------------------------quản lý sản phẩm ---------------------------------------->
+    <section class="sanphamm" style="display: none;" id="sanphamm">
+    <div>
+        <form id="Form">
+            <input type="number" id="Number" placeholder="STT">
+            <input type="text" id="Name" placeholder="Tên sản phẩm">
+            <input type="text" id="Size" placeholder="Size (S, M, L)">
+            <input type="number" id="Quantity" placeholder="Số lượng">
+            <input type="number" id="ImportPrice" placeholder="Giá nhập">
+            <input type="number" id="SellPrice" placeholder="Giá bán">
+            <input type="text" id="Image" placeholder="URL ảnh sản phẩm">
+            <button class="btn" type="Button" id="save">Lưu thông tin</button>
+        </form>
+    </div>
+    <div class="sanpham">
+        <div>
+            <table class="table" id="render">
+                <thead>
+                    <tr>
+                        <th>Mã Sản Phẩm</th>
+                        <th>Mô tả</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Size</th>
+                        <th>Số lượng</th>
+                        <th>Giá Nhập</th>
+                        <th>Giá Bán</th>
+                        <th>Thao Tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <img src="https://scontent.fhan4-5.fna.fbcdn.net/v/t39.30808-6/506732023_1019063813710750_4168809348323781803_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=xtJwGqad3CMQ7kNvwGgArcM&_nc_oc=AdkP-gOjrx9PwPsFXWRZVFj8vHt6O4k2l0jiMFq1iefr1_QsX2Lnlee2LVMZbe7y70g&_nc_zt=23&_nc_ht=scontent.fhan4-5.fna&_nc_gid=V3OApYG9bB5LMiLCpSYGeA&oh=00_AfNTZgLQoXHdFhWy6KAnwFUx2ZidpLvyOwXusCa3jhpoiw&oe=68521614" width="60" height="60" style="object-fit: cover; border-radius: 8px;"><br>
+                            <strong>Áo Thun Trơn</strong>
+                        </td>
+                        <td>Áo Thun Trơn</td>
+                        <td>M</td>
+                        <td>50</td>
+                        <td>80000 đ</td>
+                        <td>120000 đ</td>
+                        <td>
+                            <button onclick="editRow(this)">Sửa</button>
+                            <button onclick="deleteRow(this)">Xóa</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            <img src="https://i.imgur.com/WpF0iWa.jpg" width="60" height="60" style="object-fit: cover; border-radius: 8px;"><br>
+                            <strong>Quần Jean Nữ</strong>
+                        </td>
+                        <td>Quần Jean Nữ</td>
+                        <td>S</td>
+                        <td>30</td>
+                        <td>150000 đ</td>
+                        <td>250000 đ</td>
+                        <td>
+                            <button onclick="editRow(this)">Sửa</button>
+                            <button onclick="deleteRow(this)">Xóa</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            <img src="https://i.imgur.com/0KHbFSH.jpg" width="60" height="60" style="object-fit: cover; border-radius: 8px;"><br>
+                            <strong>Đầm Công Sở</strong>
+                        </td>
+                        <td>Đầm Công Sở</td>
+                        <td>L</td>
+                        <td>20</td>
+                        <td>200000 đ</td>
+                        <td>350000 đ</td>
+                        <td>
+                            <button onclick="editRow(this)">Sửa</button>
+                            <button onclick="deleteRow(this)">Xóa</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-------------------------------------------- Quản lý đơn hàng --------------------------------------->
+    <section>
+        <div class="donhang" id="donhang" style="display: none;">
+            <div >
+                <form id="Form-2">
+                    <input type="hidden" id="maDH" placeholder="Mã Đơn Hàng">
+                    <input type="text" id="tenKH" placeholder="Tên Khách Hàng">
+                    <input type="text" id="tensp" placeholder="Tên Sản Phẩm">
+                    <input type="number" id="soLuong" placeholder="Số Lượng" >
+                    <input type="number" id="tongTien" placeholder="Tổng Tiền" >
+                    <input type="date" id="ngay" placeholder="Ngày Tạo Đơn" >
+                    <input type="text" id="trangThai" placeholder="Trạng thái đơn hàng">
+                    <button class="btn2" type="Button" id="saves"  onclick="adds()">Lưu thông tin</button>
+                </form>
+            </div>
+            <div class="main-don-hang">
+                <table>
+                    <thead>
+                        <tr><th>Mã Đơn Hàng</th>
+                            <th>Tên khách hàng</th>
+                            <th>Tên Sản Phẩm</th>
+                            <th>Số lượng</th>
+                            <th>Tổng tiền</th>
+                            <th>Ngày tạo</th>
+                            <th>Trạng thái</th>
+                            <th>Thao tác</th></tr>
+                        
+                    </thead>
+                    <tbody class="body-don-hang">
+                       
+                    </tbody>
+                </table>
+            </div>
+            <div class="top"><i class="fa-solid fa-chart-simple"></i> Doanh thu bán hàng </div>
+            <div class="top-1">
+        </div>
+    </section>
+<!----------------------------------------------------- THỐNG KÊ ------------------------------------------->
+    <section  class="thongke" style="display: none;" id="thongke">
+        <div class="thongke-main">
+            <div class="thongke-table">
+                <div class="top"><p><i class="fa-solid fa-chart-simple"></i> Doanh thu bán hàng </p></div>
+                <div class="top-1">
+                    <div class="top-1-below">
+                        <i class="fa-solid fa-chart-column"></i> Hoạt động
+                    </div>
+                    <div class="top-2-below">
+                        <div class="below-left">
+                            <p>Tổng tiền bán hàng</p>
+                            <p>Tổng đơn hàng</p>
+                            <p>Tổng đơn hàng giao thành công</p>
+                            <p>Tổng đơn hàng hoàn</p>
+                            <p>Tổng đơn hàng đang chờ xử lý</p>
+                            <p>Tổng đơn hàng bị hủy</p>
+                        </div>
+                        <div class=" below-right">
+                            <p>54.000.000<ins>đ</ins></p>
+                            <p>300</p>
+                            <p>250</p>
+                            <p>15</p>
+                            <p>30</p>
+                            <p>5</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="sanpham-table">
+                <div class="top"><p><i class="fa-solid fa-pen-to-square"></i> Thống kê sản phẩm </p></div>
+                <div class="top-1">
+                    <div class="top-1-below">
+                        <i class="fa-solid fa-chart-column"></i> Thông tin sản phẩm
+                    </div>
+                    <div class="top-2-below">
+                        <div class="below-left">
+                            <p>Tồn kho</p>
+                            <p>Mới nhập</p>
+                            <p>Hết hàng</p>
+                            <p>Lỗi</p>
+                            <p>Sắp hết hàng</p>
+                            <p></p>
+                        </div>
+                        <div class=" below-right">
+                            <p>30</p>
+                            <p>500</p>
+                            <p>0</p>
+                            <p>0</p>
+                            <p>30</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="hoantien-table">
+                <div class="top"><p><i class="fa-solid fa-rotate-right"></i> Đơn hàng hoàn trả </p></div>
+                <div class="top-1">
+                    <div class="top-1-below">
+                        <i class="fa-solid fa-chart-column"></i> Hoạt động
+                    </div>
+                    <div class="top-2-below">
+                        <div class="below-left">
+                            <p>Số đơn hàng hoàn tiền</p>
+                            <p>Đơn hàng bị thất lạc</p>
+                           
+                        </div>
+                        <div class=" below-right">
+                            <p>20</p>
+                            <p>18</p>
+                         
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="inner_chart">
+            <canvas id="inner_chart_donban" width="555" height="397" style="display: block;box-sizing: border-box;height: 265px;/* width: 530px; */"></canvas>
+            <canvas id="inner_chart_doanhthu" width="555" height="397" style="display: block;box-sizing: border-box;height: 265px;/* width: 530px; */"></canvas>
+        </div>
+    </section>
+      
+    <!------------------------------------------------------ quản lý nhà cung cấp ------------------------------------>
+    <section  class="nhacungcap" style="display: none;" id="nhacungcap">
+        <div>
+            <table>
+                <tr>
+                    <th>Mã nhà cung cấp</th>
+                    <th>Tên nhà cung cấp</th>
+                    <th>Số điện thoại</th>
+                    <th>Địa chỉ</th>
+                    <th>Thao Tác</th>
+                </tr>
+                <tr>
+                    <td>NCC001</td>
+                    <td>Lê Đức Phúc</td>
+                    <td>0337345411</td>
+                    <td>Hưng Yên</td>
+                    <td>
+                        <i class="fa-solid fa-trash"></i>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </td>
+                </tr>  
+                <tr>
+                    <td>NCC002</td>
+                    <td>Đào Việt Cường</td>
+                    <td>0327596631</td>
+                    <td>Hưng Yên</td>
+                    <td>
+                        <i class="fa-solid fa-trash"></i>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </td>
+                </tr>  
+                <tr>
+                    <td>NCC003</td>
+                    <td> Nguyễn Tú Chi</td>
+                    <td>0327596631</td>
+                    <td>Hưng Yên</td>
+                    <td>
+                        <i class="fa-solid fa-trash"></i>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </td>
+                </tr>  
+                <tr>
+                    <td>NCC004</td>
+                    <td>Trần Văn Long</td>
+                    <td>0356789123</td>
+                    <td>Hà Nội</td>
+                    <td>
+                        <i class="fa-solid fa-trash"></i>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>NCC005</td>
+                    <td>Nguyễn Thị Mai</td>
+                    <td>0389456781</td>
+                    <td>Hải Phòng</td>
+                    <td>
+                        <i class="fa-solid fa-trash"></i>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>NCC006</td>
+                    <td>Phạm Văn Đức</td>
+                    <td>0345567892</td>
+                    <td>Đà Nẵng</td>
+                    <td>
+                        <i class="fa-solid fa-trash"></i>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>NCC007</td>
+                    <td>Đỗ Thị Hạnh</td>
+                    <td>0398765432</td>
+                    <td>Hồ Chí Minh</td>
+                    <td>
+                        <i class="fa-solid fa-trash"></i>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>NCC008</td>
+                    <td>Vũ Thị Bích</td>
+                    <td>0371234567</td>
+                    <td>Cần Thơ</td>
+                    <td>
+                        <i class="fa-solid fa-trash"></i>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>NCC009</td>
+                    <td>Nguyễn Văn An</td>
+                    <td>0368901234</td>
+                    <td>Huế</td>
+                    <td>
+                        <i class="fa-solid fa-trash"></i>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>NCC010</td>
+                    <td>Hoàng Thị Nhung</td>
+                    <td>0321678901</td>
+                    <td>Quảng Ninh</td>
+                    <td>
+                        <i class="fa-solid fa-trash"></i>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>NCC011</td>
+                    <td>Lê Văn Hải</td>
+                    <td>0312345678</td>
+                    <td>Nghệ An</td>
+                    <td>
+                        <i class="fa-solid fa-trash"></i>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>NCC012</td>
+                    <td>Phan Thị Hoa</td>
+                    <td>0332123456</td>
+                    <td>Bình Định</td>
+                    <td>
+                        <i class="fa-solid fa-trash"></i>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </td>
+                </tr>
+               
+            </table>
+        </div>
+    </section>
+    <!-- quản lý nhân viên -->
+    <section  class="qlnhanvien" style="display: none;" id="qlnhanvien">
+        <div>
+            <table>
+                <tr>
+                    <th>Mã nhân viên</th>
+                    <th>Tên nhân viên</th>
+                    <th>Số điện thoại</th>
+                    <th>Địa chỉ</th>
+                    <th>Chức Vụ</th>
+                    <th>Email</th>
+                    <th>Thao tác</th>
+                </tr>
+                <tr>
+                    <td>NV001</td>
+                    <td>Lê Đức Phú</td>
+                    <td>0337345411</td>
+                    <td>Phù Cừ - Hưng Yên</td>
+                    <td>Quản Lí</td>
+                    <td>Ngc4440@gmail.com</td>
+                    <td>
+                        <i class="fa-solid fa-trash"></i>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </td>
+                </tr>  
+                <tr>
+                    <td>NV002</td>
+                    <td>Đào Việt Cường</td>
+                    <td>0327596631</td>
+                    <td>Mỹ Hào - Hưng Yên</td>
+                    <td>Quản Lí</td>
+                    <td>Cuong123@gmail.com</td>
+                    <td>
+                        <i class="fa-solid fa-trash"></i>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </td>
+                </tr>  
+                <tr>
+                    <td>NV003</td>
+                    <td> Nguyễn Tú Chi</td>
+                    <td>0327596631</td>
+                    <td>Yên Mỹ - Hưng Yên</td>
+                    <td>Nhân Viên</td>
+                    <td>abc@gmail.com</td>
+                    <td>
+                        <i class="fa-solid fa-trash"></i>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </td>
+                </tr>  
+                <tr>
+                    <td>NV004</td>
+                    <td>Trần Văn Long</td>
+                    <td>0356789123</td>
+                    <td>Văn Giang - Hưng Yên</td>
+                    <td>Nhân Viên</td>
+                    <td>Long222@gmail.com</td>
+                    <td>
+                        <i class="fa-solid fa-trash"></i>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>NV005</td>
+                    <td>Nguyễn Thị Mai</td>
+                    <td>0389456781</td>
+                    <td>Hải Phòng</td>
+                    <td>Nhân Viên</td>
+                    <td>Long222@gmail.com</td>
+
+                    <td>
+                        <i class="fa-solid fa-trash"></i>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </td>
+                </tr>
+               
+               
+            </table>
+        </div>
+    </section>
+    <!-- d -->
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+     <script src="QuanTri.js"></script>
+     <script>
+        let chartAccess = document.getElementById("inner_chart_donban");
+        new Chart(chartAccess, {
+          type: "bar",
+          data: {
+            labels: [
+              "Tháng 1",
+              "Tháng 2",
+              "Tháng 3",
+              "Tháng 4",
+              "Tháng 5",
+              "Tháng 6",
+              "Tháng 7",
+              "Tháng 8",
+              "Tháng 9",
+              "Tháng 10",
+              "Tháng 11",
+              "Tháng 12",
+            ],
+            datasets: [
+              {
+                label: "Lượng đơn hàng đã bán",
+                backgroundColor: "#778AC1",
+                borderColor: "#778AC1",
+                data: [120, 80, 90, 60, 70, 110, 50, 100, 40, 50, 85, 85],
+                borderWidth: 1,
+              },
+            ],
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true,
+              },
+            },
+          },
+        });
+        //
+        let chartTotalBuy = document.getElementById("inner_chart_doanhthu");
+        new Chart(chartTotalBuy, {
+          type: "line", 
+          data: {
+            labels: [
+              "Tháng 1",
+              "Tháng 2",
+              "Tháng 3",
+              "Tháng 4",
+              "Tháng 5",
+              "Tháng 6",
+              "Tháng 7",
+              "Tháng 8",
+              "Tháng 9",
+              "Tháng 10",
+              "Tháng 11",
+              "Tháng 12",
+            ],
+            datasets: [
+              {
+                label: "Doanh thu bán hàng",
+                backgroundColor: "#AAAFF0", // Màu nền của các điểm trên đường
+                borderColor: "#AAAFF0", // Màu đường
+                data: [
+                  10000000, 7000000, 7500000, 5000000, 5800000, 9000000, 4800000, 7800000, 3800000, 4500000,
+                  7800000, 7800000,
+                ],
+                borderWidth: 2, // Độ dày của đường
+                fill: false, // Không tô màu bên dưới đường
+                tension: 0.4, // Độ cong của đường
+              },
+            ],
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true,
+              },
+            },
+          },
+        });
+      </script>
+    
+  
+</body>
+</html>
